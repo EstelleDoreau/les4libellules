@@ -25,7 +25,7 @@
 		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
 		crossorigin="anonymous">
 
-	<!-- font awesome : for beautiful icon fonts -->
+	<!-- font awesome, for beautiful icon fonts -->
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/main.css">
@@ -35,6 +35,12 @@
 	<link rel="stylesheet" type="text/css" href="css/section_contact.css">
 	<!-- footer -->
     <link rel="stylesheet" type="text/css" href="css/section_footer.css">
+
+
+	<script
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous"></script>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -55,22 +61,21 @@
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
 
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#theMenu" aria-expanded="false">
 	        <span class="sr-only">Toggle navigation</span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
 
-	      <a class="navbar-brand visible-xs visible-md visible-lg" href="#">
-	        <img alt="Brand" src="img/logo.png" class="img-responsive">
-	      </a>
+	      <div class="navbar-brand navbar-left">
+	        <img alt="Brand" src="img/logo-black.png" class="thumbnail img-responsive">
+	      </div>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="cbs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav navbar-right">
-	        <li class="active"><a href="#">Link <span class="sr-only">Fellows</span></a></li>
+	    <div class="collapse navbar-collapse navbar-default" id="theMenu">
+	      <ul class="nav navbar-nav navbar-left">
 	        <li><a href="#aboutUs">About us</a></li>
 	        <li><a href="#foodnDrink">Food 'n Drink</a></li>
 	        <li><a href="#liveSport">Live sport</a></li>
