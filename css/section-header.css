@@ -1,3 +1,12 @@
+@font-face {
+	font-family: 'yeseva';
+	src:
+		url('fonts/yesevaOne.otf') format('otf'),
+		url('fonts/yesevaOne.woff') format('woff'),
+		url('fonts/yesevaOne.woff2') format('woff2');
+}
+
+
 header .centerMaker {
 	display: flex;
 	flex-direction: row;
@@ -9,14 +18,20 @@ header .mainTitle {
 	display: inline-block;
 	text-align: center;
 
+	font-family: yeseva, serif;
+
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 
 	margin: 1em auto;
+
+
 }
 
 header .mini {
-
+	position: relative;
+	top: -0.8em;
+	z-index: 1;
 }
 
 header .mainTitle p {
