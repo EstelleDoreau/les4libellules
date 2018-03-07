@@ -243,25 +243,23 @@
                   </li>
               </ul>
                 <form name="contact_form" method="post" action="/contact" class="col-xs-12 col-md-6">           
-                    <div>
+                    <div class="form--item">
                         <label for="contact_form_email">E-mail&nbsp;*</label>
                         <input type="email" id="contact_form_email" name="contact_form_email" required="required" placeholder="Votre adresse email">
                     </div>
-                    <div>
+                    <div class="form--item">
                         <label for="contact_form_subject">Sujet&nbsp;*</label>
                         <select id="contact_form_subject" name="contact_form_subject">
                             <option value="demande de réservation">Demande de réservation</option>
                             <option value=""></option>
                         </select>
                     </div>
-                    <div>
+                    <div class="form--item">
                         <label for="contact_form_message">Message&nbsp;*</label>
                         <textarea id="contact_form_message" name="contact_form_message" required="required" placeholder="Votre message ici"></textarea>
                     </div>
 
-                    <div>
-                        <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=fr"></script><div class="g-recaptcha" data-theme="light" data-size="normal" data-type="image" data-sitekey="6Ldrei4UAAAAAOkkFVyeFNExSsFl500dM6LIpau9" data-callback="" data-expired-callback="" data-bind=""><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?k=6Ldrei4UAAAAAOkkFVyeFNExSsFl500dM6LIpau9&amp;co=aHR0cHM6Ly93d3cubWVyY2F0by1lbXBsb2kuY29tOjQ0Mw..&amp;hl=fr&amp;type=image&amp;v=v1519626662381&amp;theme=light&amp;size=normal&amp;cb=g2pv4hsetuu4" width="304" height="78" role="presentation" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" kwframeid="1"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div><noscript>&lt;div style="width: 302px; height: 352px;"&gt;&lt;div style="width: 302px; height: 352px; position: relative;"&gt;&lt;div style="width: 302px; height: 352px; position: absolute;"&gt;&lt;iframe src="https://www.google.com/recaptcha/api/fallback?k=6Ldrei4UAAAAAOkkFVyeFNExSsFl500dM6LIpau9" frameborder="0" scrolling="no" style="width: 302px; height:352px; border-style: none;"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;div style="width: 250px; height: 80px; position: absolute; border-style: none; bottom: 21px; left: 25px; margin: 0; padding: 0; right: 25px;"&gt;&lt;textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 80px; border: 1px solid #c1c1c1; margin: 0; padding: 0; resize: none;"&gt;&lt;/textarea&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</noscript>
-                      </div>
+                    <iframe src="https://www.google.com/recaptcha/api2/anchor?k=6Ldrei4UAAAAAOkkFVyeFNExSsFl500dM6LIpau9&amp;co=aHR0cHM6Ly93d3cubWVyY2F0by1lbXBsb2kuY29tOjQ0Mw..&amp;hl=fr&amp;type=image&amp;v=v1519626662381&amp;theme=light&amp;size=normal&amp;cb=g2pv4hsetuu4" width="304" height="78" role="presentation" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" kwframeid="1"></iframe>
                   
                     <div class="text-center">
                         <button type="submit" id="contact_form_submit" name="contact_form[submit]" class="button button--blue">Envoyer</button>
@@ -276,39 +274,44 @@
       <!-- footer -->
       <footer>
         <div class="container">
-            <div id="Footer__socket">
-                    <div class="col-xs-12 col-md-4">
-                        <img src="" alt="">
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <header>
-                            <h5></h5>
-                        </header>
-                        <nav>
-                            <ul>
-                                <li><a href="" title=""></a></li>
-                                <li><a href="" title=""></a></li>
-                            </ul>
-                        </nav>
-                    </div>
+            <div id="Footer__socket" class="row">
+                <div class="col-xs-12 col-md-4">
+                    <img src="img/logo.png" alt="Logo The market Tavern">
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <header>
+                        <h5>Navigation</h5>
+                    </header>
+                    <nav>
+                        <ul>
+                            <li><a href="#" title="Fellows">Fellows</a></li>
+					        <li><a href="#aboutUs" title="About us">About us</a></li>
+					        <li><a href="#foodnDrink" title="Food 'n Drink">Food 'n Drink</a></li>
+					        <li><a href="#liveSport" title="Live sport">Live sport</a></li>
+					        <li><a href="#events" title="Events">Events</a></li>
+					        <li><a href="#facebook" title="Our facebook">Our facebook</a></li>
+					        <li><a href="#contact" title="Contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
 
-                   <div class="col-xs-12 col-md-4">
-                        <header>
-                            <h5></h5>
-                        </header>
-                        <nav>
-                            <ul id="Networks">
-                                <li>
-                                    <a href="https://www.facebook.com/themarkettavernbordeaux/" title="Page Facebook The Tavern Market" target="_blank">
-                                        <i class="fa fa-facebook-official"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+               <div class="col-xs-12 col-md-4">
+                    <header>
+                        <h5>Suivez-nous</h5>
+                    </header>
+                    <nav>
+                        <ul id="Networks">
+                            <li>
+                                <a href="https://www.facebook.com/themarkettavernbordeaux/" title="Page Facebook The Tavern Market" target="_blank">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-            <div id="Footer__footer" class="text-center">
+        
+            <div id="Footer__footer" class="row text-center">
                 <p class="Information">©&nbsp;Copyright 2018 The Market Tavern&nbsp;- Réalisation&nbsp;:
                     <a href="" title="" target="_blank">Les 4 libellules</a>
                 </p>
