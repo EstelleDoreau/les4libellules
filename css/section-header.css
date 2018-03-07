@@ -30,6 +30,9 @@ header .mainTitle {
 
 header .mini {
 	position: relative;
+	display: inline-block;
+	background-color: white;
+
 	top: -0.8em;
 	z-index: 1;
 }
@@ -47,4 +50,28 @@ header img.navbar-brand {
 	padding: 0;
 }
 
+
+
+header .container-fluid {
+	padding: 0;
+	margin: 5% 0;
+}
+
+header .parentSurimpressed {
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+header .surimpressedOnParent {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+
+	margin-left: auto;
+	margin-right: auto;
+
+	max-height: 50%;
+}
 
