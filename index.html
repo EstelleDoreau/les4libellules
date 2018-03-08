@@ -13,16 +13,16 @@
     <meta name="description" content="The Market Tavern gastropub">
     <meta name="keywords" content="the Market Tavern,pub,gastropub,food,drinks,live events">
 
-     <!-- favicon -->
-     <link rel="icon" type="image/x-icon" href="/img/logos/favicon.ico">
-     <link rel="icon" href="/img/logos/favicon.png">
-     <link rel="apple-touch-icon" sizes="180x180" href="img/logos/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="img/logos/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="img/logos/favicon-16x16.png">
-     <link rel="manifest" href="img/logos/site.webmanifest">
-     <link rel="mask-icon" href="img/logos/safari-pinned-tab.svg" color="#ffffff">
-     <meta name="msapplication-TileColor" content="#00aba9">
-     <meta name="theme-color" content="#ffffff">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/logos/favicon.ico">
+    <link rel="icon" href="/img/logos/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logos/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logos/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logos/favicon-16x16.png">
+    <link rel="manifest" href="img/logos/site.webmanifest">
+    <link rel="mask-icon" href="img/logos/safari-pinned-tab.svg" color="#ffffff">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
 
 
    	<!-- style -->
@@ -32,28 +32,31 @@
    		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     		crossorigin="anonymous">
 
-    	<!-- font awesome, for beautiful icon fonts -->
-      <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <!-- font awesome, for beautiful icon fonts -->
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
       <!-- https://fontawesome.com/how-to-use/upgrading-from-4#v4-shim -->
-      <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js">
-      </script>
-      <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/v4-shims.js">
-      </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js">
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/v4-shims.js">
+    </script>
 
-      <!-- main -->
-    	<link rel="stylesheet" type="text/css" href="css/main.css">
-    	<!--header-->
-    	<link rel="stylesheet" type="text/css" href="css/section-header.css">
-  	  <!-- masonry -->
-  	  <link rel="stylesheet" type="text/css" href="masonry.css">
-      <!-- events -->
-      <link rel="stylesheet" type="text/css" href="css/section_events.css">
-    	<!-- facebook -->
-      <link rel="stylesheet" type="text/css" href="css/section_facebook.css">
-    	<!-- contact -->
-    	<link rel="stylesheet" type="text/css" href="css/section_contact.css">
-    	<!-- footer -->
-      <link rel="stylesheet" type="text/css" href="css/section_footer.css">
+     <!-- main -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--header-->
+    <link rel="stylesheet" type="text/css" href="css/section-header.css">
+    <!--food'nDrink-->
+    <link rel="stylesheet" type="text/css" href="css/section-foodnDrink.css">
+
+  	<!-- masonry -->
+  	<link rel="stylesheet" type="text/css" href="masonry.css">
+    <!-- events -->
+    <link rel="stylesheet" type="text/css" href="css/section_events.css">
+    <!-- facebook -->
+    <link rel="stylesheet" type="text/css" href="css/section_facebook.css">
+    <!-- contact -->
+    <link rel="stylesheet" type="text/css" href="css/section_contact.css">
+    <!-- footer -->
+    <link rel="stylesheet" type="text/css" href="css/section_footer.css">
 
 
 	<script
@@ -75,14 +78,14 @@
 	<header>
 
 	  <div class="centerMaker">
-	  	<div class="mainTitle visible-sm visible-md visible-lg">
-	  		<p class="mini">THE</p>
+	  	<div class="mainTitle font-title visible-sm visible-md visible-lg">
+	  		<p class="mini font-title">THE</p>
 	  		<p>Market Tavern</p>
 	  	</div>
 	  </div>
 
 	  <!-- Navbar -->
-	  <nav class="navbar navbar-default">
+	  <nav class="navbar navbar-default navbar-center">
 
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
@@ -100,12 +103,12 @@
       		src="img/logos/logo_black_transparent_background.png" class="img-responsive">
 
       	  <div class="navbar-brand navbar-left visible-xs">
-      	  	<p class="title-xs">the Market Tavern</p>
+      	  	<p class="title-xs font-title">the Market Tavern</p>
       	  </div>
 
 	    </div>
 
-
+ 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse navbar-right" id="theMenu">
 	      <ul class="nav navbar-nav navbar-left">
@@ -212,8 +215,52 @@
 
   	<!-- menu / food & drink : Sébastien -->
 
-  	<section>
-  	</section>
+  	<section id="foodnDrink" class="container">
+  		<div class="row">
+
+            <!-- the tab-bar ... -->  
+          	<ul class="nav nav-tabs nav-justified" role="tablist">
+
+	            <li class="nav-item active" role="presentation">
+	                <a class="nav-link tab-title" data-toggle="tab"
+	                	href="#menuMain" role="tab">Eating</a>
+	            </li>
+
+	            <li class="nav-item" role="presentation">
+	                <a class="nav-link tab-title" data-toggle="tab"
+	                	href="#menuDrinks" role="tab">Drinking</a>
+            	</li>
+
+        	</ul>
+
+        </div>
+
+        <!-- ... and its content -->
+        <div class="row">
+
+            <!-- first panel -->
+            <div id="menuMain"
+                class="tab-content col">
+                <div class="thumbnail">
+
+                	<img class="img-responsive" alt="the main menu"
+                		 src="img/main-menu.jpg" title="our main menu">
+                </div>
+            </div>
+
+            <!-- first panel -->
+            <div id="menuMain"
+                class="tab-content col">
+                <div class="thumbnail">
+                	<img class="img-responsive" alt="the main menu"
+                		src="img/drink-menu.jpg" title="our main menu">
+                </div>
+            </div>
+
+        </div>
+
+  	</section> <!-- .container -->
+
 
    
       <!-- live sport -->
