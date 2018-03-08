@@ -1,0 +1,13 @@
+/* CSS for the "footer" section */
+footer {
+	background-color: #333;
+	color: #777;
+}
+
+footer #Footer__socket, footer #Footer__footer {
+	padding: 2em 0;
+}
+
+footer #Footer__socket img {
+	max-width: 50%;
+}
