@@ -1,0 +1,10 @@
+#foodnDrink .thumbnail {
+	margin: 0;
+	padding: 0;
+}
+
+#foodnDrink .tab-title {
+	font-family: 'yesava', serif;
+	font-weight: bold;
+	font-size: 2rem;
+}

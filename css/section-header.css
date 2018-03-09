@@ -1,9 +1,14 @@
 @font-face {
 	font-family: 'yeseva';
 	src:
-		url('fonts/yesevaOne.otf') format('otf'),
+		url('fonts/yesevaOne.woff2') format('woff2'),
 		url('fonts/yesevaOne.woff') format('woff'),
-		url('fonts/yesevaOne.woff2') format('woff2');
+		url('fonts/yesevaOne.otf') format('otf'),
+		url('fonts/yesevaOne.ttf') format('truetype');
+}
+
+header .font-title {
+	font-family: 'yeseva', serif
 }
 
 
@@ -17,8 +22,6 @@ header .centerMaker {
 header .mainTitle {
 	display: inline-block;
 	text-align: center;
-
-	font-family: yeseva, serif;
 
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
@@ -49,7 +52,6 @@ header img.navbar-brand {
 	margin: 0;
 	padding: 0;
 }
-
 
 
 header .container-fluid {
