@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+	  
+	  
+	  
+    
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -100,7 +104,7 @@
 	      <img class="navbar-brand navbar-left img-responsive"
       		alt="Our marvelous pig-branded logo"
       		title="Our logo is a fat,tasty flying pig (on the ground for now)"
-      		src="img/logos/logo_black_transparent_background.png" class="img-responsive">
+      		src="img/logos/logo_black_transparent_background.png" >
 
       	  <div class="navbar-brand navbar-left visible-xs">
       	  	<p class="title-xs font-title">the Market Tavern</p>
@@ -162,13 +166,13 @@
 				</video>
 			</iframe>
 		
-			<!-- < vertical-align center-text white-text-shadow home-banner sail-away"		style="transform: translate3d(0px, 0px, 0px);"> -->
+			 vertical-align center-text white-text-shadow home-banner sail-away"		style="transform: translate3d(0px, 0px, 0px);"> -->
 			<!-- <img class="scroll-pop-hover"
 				src="img/logo-black.png" alt="" title="Our beautiful pig"
 				aria-hidden="true" > -->
-		</div>	<!-- .embed-responsive -->
+		<!--.embed-responsive -->
 
-	</header>
+	  </header>
 
 
   	<!-- présentation : Aurélie -->
@@ -185,7 +189,7 @@
                  <div class="row">
                      <div class="col-xs-12 col-md-6">
                          <img src="img/gastro-pub-burger-and.jpg" alt="burger">
-                         <img src="" alt="image2">
+                         <img src="#" alt="image2">
                      
                      </div>
                      
@@ -214,55 +218,59 @@
 
 
   	<!-- menu / food & drink : Sébastien -->
-
-  	<section id="foodnDrink" class="container">
-  		<div class="row">
-
-            <!-- the tab-bar ... -->  
-          	<ul class="nav nav-tabs nav-justified" role="tablist">
-
-	            <li class="nav-item active" role="presentation">
-	                <a class="nav-link tab-title" data-toggle="tab"
-	                	href="#menuMain" role="tab">Eating</a>
-	            </li>
-
-	            <li class="nav-item" role="presentation">
-	                <a class="nav-link tab-title" data-toggle="tab"
-	                	href="#menuDrinks" role="tab">Drinking</a>
-            	</li>
-
-        	</ul>
-
-        </div>
-
-        <!-- ... and its content -->
-        <div class="row">
-
-            <!-- first panel -->
-            <div id="menuMain"
-                class="tab-content col">
-                <div class="thumbnail">
-
-                	<img class="img-responsive" alt="the main menu"
-                		 src="img/main-menu.jpg" title="our main menu">
-                </div>
-            </div>
-
-            <!-- first panel -->
-            <div id="menuMain"
-                class="tab-content col">
-                <div class="thumbnail">
-                	<img class="img-responsive" alt="the main menu"
-                		src="img/drink-menu.jpg" title="our main menu">
-                </div>
-            </div>
-
-        </div>
-
-  	</section> <!-- .container -->
-
-
-   
+<section>
+	
+	<h2>Food and Drinks </h2>
+<div class="container-fluid">
+		<div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="#bière" class="thumbnail beer" id="bière">
+      <img src="http://static.cnewsmatin.fr/sites/default/files/biere_7.jpg" alt="bière">
+	
+    </a>
+	  
+	  <img src="img/drink-menu.jpg" alt="photo" class="menubeer" />
+	  
+  </div>
+ <a href="#burger" class="thumbnail burger" id="burger">
+      <img src="https://vivreparis.fr/wp-content/uploads/2018/01/image-1.jpg"  alt="burger" width="370" class="pictureburger">
+	 
+	 
+	<img src="img/Menu.jpg" alt="" class="image"  />
+			</a>
+			
+				<script type="text/javascript">
+			
+			$("document").ready(function(){
+				$(".image").hide();
+				$(".burger").click(function(){
+					$(".image").slideToggle("slow",function(){
+						
+					})
+					
+				})
+				
+				
+				$(".menubeer").hide();
+				$(".beer").click(function(){
+					$(".menubeer").slideToggle("slow",function(){
+						
+					})
+					
+				})
+				
+			})
+			
+		</script>
+			
+</div>
+		</div>
+		
+		
+		
+		
+		
+	</section>
       <!-- live sport -->
     	<section id="LiveSports"> 		
     	   <div class="container">
@@ -272,7 +280,7 @@
             				<article class="the-side big big-left scroll-pop fade-in popped">
             					<a href="img/programmesport.jpg" id="afficheimage" target="_BLANK">
             						<div class="art">
-            							<img src="img/imgresize/foot1.jpg" />
+            							<img src="img/imgresize/foot1.jpg"  alt="photostadedefoot"/>
             						</div>
             						<div class="article-content content">
             							<div class="inner">
@@ -286,7 +294,7 @@
             				<article class="the-side small small-right img-right scroll-pop fade-in popped">
             					<a href="#">
             						<div class="art">
-            							<img src="img/imgresize/allblacks.jpg">
+            							<img src="img/imgresize/allblacks.jpg" alt="photorugby">
             						</div>
             						<div class="article-content content">
             							<div class="inner">
@@ -300,7 +308,7 @@
             				<article class="the-side small small-right img-left scroll-pop fade-in popped">
             					<a href="#presentation">
             						<div class="art">
-            							<img src="img/imgresize/logoretouche.png" >
+            							<img src="img/imgresize/logoretouche.png" alt="logo" >
             						</div>
             						<div class="article-content content">
             							<div class="inner">
@@ -314,7 +322,7 @@
             				<article class="the-side big big-right scroll-pop fade-in popped">
             					<a href="#">
             						<div class="art">
-            							<img src="img/imgresize/soccer3.jpg">
+            							<img src="img/imgresize/soccer3.jpg" alt="photopub">
             						</div>
             						<div class="article-content content">
             							<div class="inner">
@@ -328,7 +336,7 @@
             				<article class="the-side small small-left img-left scroll-pop fade-in popped">
             					<a href="img/drink-menu.jpg" target="_blank">
             						<div class="art">
-            							<img src="img/imgresize/soccerbar.jpg">
+            							<img src="img/imgresize/soccerbar.jpg" alt="pub">
             						</div>
             						<div class="article-content content">
             							<div class="inner">
@@ -342,7 +350,7 @@
             				<article class="the-side small small-left img-right scroll-pop fade-in popped">
             					<a href="img/Menu.jpg" target="_blank">
             						<div class="art">
-            							<img src="img/imgresize/burger.jpg" >
+            							<img src="img/imgresize/burger.jpg" alt="burger" >
             						</div>
             						<div class="article-content content">
             							<div class="inner">
@@ -517,9 +525,9 @@
                       <img src="img/logos/logo.png" alt="Logo The market Tavern">
                   </div>
                   <div class="col-xs-12 col-md-3">
-                      <header>
+                      
                           <h5>Navigation</h5>
-                      </header>
+                      
                       <nav>
                           <ul>
                               <li><a href="#" title="Fellows">Fellows</a></li>
@@ -534,9 +542,9 @@
                   </div>
 
                   <div class="col-xs-12 col-md-3">
-                      <header>
+                      
                           <h5>Partenaires</h5>
-                      </header>
+                      
                       <nav>
                           <ul>
                               <li><a href="http://hmsvictorybordeaux.com/" title="The HMS Victory">The HMS Victory</a></li>
@@ -547,9 +555,9 @@
                   </div>
 
                  <div class="col-xs-12 col-md-3">
-                      <header>
+                      
                           <h5>Suivez-nous</h5>
-                      </header>
+                      
                       <nav>
                           <ul id="Networks">
                               <li>
@@ -584,9 +592,7 @@
               </div>
           </div>
       </footer>
-
-    	<!-- javascript -->
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+ 
 
     	<!-- Bootstrap : Latest compiled and minified JavaScript -->
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
@@ -595,7 +601,7 @@
     	</script>
 	
 	
-	
+
 
     </body>
   </html>

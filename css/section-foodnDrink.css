@@ -1,10 +1,22 @@
-#foodnDrink .thumbnail {
-	margin: 0;
-	padding: 0;
+
+ .thumbnail{
+	 border: none;
+	 
+	 
 }
 
-#foodnDrink .tab-title {
-	font-family: 'yesava', serif;
-	font-weight: bold;
-	font-size: 2rem;
+
+
+h2{
+	text-align: center;
+	
+	}
+
+.row{
+ 
+}
+
+.burger{
+	width: 30%;
+	margin-left: 70%;
 }
