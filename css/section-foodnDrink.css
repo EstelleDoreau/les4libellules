@@ -1,10 +1,60 @@
 #foodnDrink .thumbnail {
 	margin: 0;
 	padding: 0;
+
+	background-color: transparent;
+	border: none;
 }
 
-#foodnDrink .tab-title {
-	font-family: 'yesava', serif;
-	font-weight: bold;
-	font-size: 2rem;
+
+#foodnDrink .springer {
+	position: relative;
+}
+
+
+/* class applied to the radio-button to make the div zoom out */
+#foodnDrink .hackyUnsetter {
+	opacity: 0;
+	z-index: 2;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+#foodnDrink .conteneur {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+/* false radio buttons to make one and only one div zoom in */
+#foodnDrink .hackyButton {
+	opacity: 0;
+	display: block;
+	z-index: 3;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.hackyButton:checked + .thumbnail {
+	position: fixed;
+	z-index: 1;
+	top: 5vh;
+	height: 90vh;
+	left: 5vw;
+	width: 90vw;
+}
+
+#foodnDrink .thumbnail .img-responsive {
+	max-height: 90vh;
+	max-width: 90vw;
 }

@@ -77,11 +77,29 @@
 
 	<header>
 
-	  <div class="centerMaker">
-	  	<div class="mainTitle font-title visible-sm visible-md visible-lg">
+	  <!-- top fixed bar -->
+<!-- TODO : make it disapear when scrolling down, visible when scrolling up ?-->
+	  <div class="headBar">
+
+	  	<div class="mainTitle font-title text-center
+	  			visible-sm visible-md visible-lg">
 	  		<p class="mini font-title">THE</p>
 	  		<p>Market Tavern</p>
 	  	</div>
+
+
+	  	<div class="floatRight">
+            <p>
+            	Téléphone&nbsp;:<br>
+            	05.56.44.09.58
+            </p>
+	  	</div>
+
+	  	<div class="floatRight">
+<!-- TODO : TROUVER BONNE CIBLE du bouton -->
+	  		<a class="btn btn-default" href="#réservation">Je réserve</a>
+	  	</div>
+
 	  </div>
 
 	  <!-- Navbar -->
@@ -216,45 +234,42 @@
   	<!-- menu / food & drink : Sébastien -->
 
   	<section id="foodnDrink" class="container">
+
+    	<input type="radio" name="hackyGroup" checked 
+    			class="hackyUnsetter" aria-hidden="true">
+
   		<div class="row">
+  			<h2 class="text-center">Food &amp; Drinks</h2>
+  		</div>
 
-            <!-- the tab-bar ... -->  
-          	<ul class="nav nav-tabs nav-justified" role="tablist">
+  		<div class="row hackyContainer">
 
-	            <li class="nav-item active" role="presentation">
-	                <a class="nav-link tab-title" data-toggle="tab"
-	                	href="#menuMain" role="tab">Eating</a>
-	            </li>
+            <div class="col-xs-12 col-sm-6 springer">
+	            <div class="conteneur">
 
-	            <li class="nav-item" role="presentation">
-	                <a class="nav-link tab-title" data-toggle="tab"
-	                	href="#menuDrinks" role="tab">Drinking</a>
-            	</li>
+	            	<input type="radio" class="hackyButton"
+	            		name="hackyGroup" aria-hidden="true">
 
-        	</ul>
+	            	<div class="thumbnail">
+	                	<img class="img-responsive" alt="the main menu"
+	                		 src="img/main-menu.jpg" title="our main menu">
+	                </div>
 
-        </div>
-
-        <!-- ... and its content -->
-        <div class="row">
-
-            <!-- first panel -->
-            <div id="menuMain"
-                class="tab-content col">
-                <div class="thumbnail">
-
-                	<img class="img-responsive" alt="the main menu"
-                		 src="img/main-menu.jpg" title="our main menu">
-                </div>
+	            </div>
             </div>
 
-            <!-- first panel -->
-            <div id="menuMain"
-                class="tab-content col">
-                <div class="thumbnail">
-                	<img class="img-responsive" alt="the main menu"
-                		src="img/drink-menu.jpg" title="our main menu">
-                </div>
+             <div class="col-xs-12 col-sm-6 springer">
+             	<div class="conteneur">
+
+	            	<input type="radio" class="hackyButton"
+	            		name="hackyGroup" aria-hidden="true">
+
+	             	<div class="thumbnail">
+	                	<img class="img-responsive" alt="the main menu"
+	                		 src="img/drink-menu.jpg" title="our main menu">
+	                </div>
+
+	            </div>
             </div>
 
         </div>
@@ -608,7 +623,7 @@
                           <ul>
                               <li><a href="#" title="Fellows">Fellows</a></li>
             					        <li><a href="#aboutUs" title="About us">About us</a></li>
-            					        <li><a href="#foodnDrink" title="Food 'n Drink">Food 'n Drink</a></li>
+            					        <li><a href="#foodnDrink" title="Our menus for eating and drinking">Food &amp; Drink</a></li>
             					        <li><a href="#liveSport" title="Live sport">Live sport</a></li>
             					        <li><a href="#events" title="Events">Events</a></li>
             					        <li><a href="#facebook" title="Our facebook">Our facebook</a></li>

@@ -12,7 +12,7 @@ header .font-title {
 }
 
 
-header .centerMaker {
+header .headBar {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -43,6 +43,12 @@ header .mini {
 header .mainTitle p {
 	margin: 0;
 	padding: 0;
+}
+
+
+header .floatRight {
+	float: right;
+	margin: 10% 0.8em;
 }
 
 
