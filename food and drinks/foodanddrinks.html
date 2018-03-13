@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html>
+	<head><title>get </title> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		
+		<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		
+		
+	<meta charset="utf-8" />
+		
+		
+		<style>
+		 .thumbnail{
+			border: none;
+					}
+			h1{
+				text-align: center;
+			}
+		
+	</style>
+		
+	</head>
+
+	
+	<body>
+		<h1>Food and Drinks</h1>
+		
+	<div class="container">
+		<div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail beer">
+      <img src="http://static.cnewsmatin.fr/sites/default/files/biere_7.jpg" alt="bière">
+	
+    </a>
+	  
+	  <img src="drink-menu.jpg" alt="photo" class="menubeer" width="600"/>
+	  
+  </div>
+ <a href="#" class="thumbnail burger">
+      <img src="https://vivreparis.fr/wp-content/uploads/2018/01/image-1.jpg"  alt="burger" width="270">
+	 
+	 
+	<img src="Menu.jpg" alt="" class="image" width="400" />
+			</a>
+			
+</div>
+		</div>
+		
+		
+		
+		
+		<script type="text/javascript">
+			
+			$("document").ready(function(){
+				$(".image").hide();
+				$(".burger").click(function(){
+					$(".image").slideToggle("slow",function(){
+						
+					})
+					
+				})
+				
+				
+				$(".menubeer").hide();
+				$(".beer").click(function(){
+					$(".menubeer").slideToggle("slow",function(){
+						
+					})
+					
+				})
+				
+			})
+			
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
