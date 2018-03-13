@@ -1,12 +1,24 @@
 header .font-title {
+	font-family: 'Yeseva One', serif;
+    color: black;
 }
 
 
 header .headBar {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: top;
+    transform: translateY(-100%);
+    transition: transform 0.5s;
+}
+@media( min-width: 769px ) {
+
+    header .headBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: top;
+
+        transform: translateY(0);
+        transition: transform 0.5s;
+    }
 }
 
 header .mainTitle {
@@ -17,8 +29,6 @@ header .mainTitle {
 	border-bottom: 1px solid black;
 
 	margin: 1em auto;
-
-
 }
 
 header .mini {
@@ -36,13 +46,6 @@ header .mainTitle p {
 }
 
 
-header .floatRight {
-	float: right;
-	margin: 10% 0.8em;
-}
-
-
-
 header img.navbar-brand {
 	max-height: 100%;
 	margin: 0;
@@ -55,13 +58,62 @@ header .container-fluid {
 	margin: 5% 0;
 }
 
-header .parentSurimpressed {
+
+
+/* bootstrap navbar styling */
+
+header .nav.navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .btn.btn-default {
+    margin-right: 1em;
+    float: right;
+}
+
+header .navbar-default {
+	background-color: white;
+	
+	position: fixed;
+	width: 100%;
+
+	border: none;
+	box-shadow: 0 2px 5px rgba(100, 100, 100, .1);
+}
+
+header .navbar-default .navbar-nav > li {
+    display:  flex;
+    flex-direction: row;
+    align-items: space-around;
+    justify-content: center;
+}
+
+
+
+header .navbar-default .navbar-nav > li > a {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+	font-size: 1rem;
+}
+
+
+header .navbar-default .navbar-nav > li > a:hover { text-decoration: underline }
+
+
+
+/* banner styling */
+
+#banner { margin: 0 }
+
+
+#banner .parentSurimpressed {
 	position: relative;
 	padding: 0;
 	margin: 0;
 }
 
-header .surimpressedOnParent {
+#banner .surimpressedOnParent {
 	position: absolute;
 	top: 50%;
 	left: 50%;

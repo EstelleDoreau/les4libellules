@@ -1,3 +1,36 @@
+
+header .mainTitle {
+    display: inline-block;
+    text-align: center;
+
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    margin: 1em auto;
+}
+
+header .mini {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+
+    top: -0.8em;
+    z-index: 1;
+}
+
+header .mainTitle p {
+    margin: 0;
+    padding: 0;
+}
+
+header .headPig {
+    max-height: 10vh;
+}
+
+
+
+
+
 .hamburger {
     padding: 0 0;
     display: inline-block;
