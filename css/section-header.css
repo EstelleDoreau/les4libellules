@@ -1,14 +1,4 @@
-@font-face {
-	font-family: 'yeseva';
-	src:
-		url('fonts/yesevaOne.woff2') format('woff2'),
-		url('fonts/yesevaOne.woff') format('woff'),
-		url('fonts/yesevaOne.otf') format('otf'),
-		url('fonts/yesevaOne.ttf') format('truetype');
-}
-
 header .font-title {
-	font-family: 'yeseva', serif
 }
 
 

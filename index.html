@@ -82,19 +82,6 @@
 	  		<p>Market Tavern</p>
 	  	</div>
 
-
-	  	<div class="floatRight">
-            <p>
-            	Téléphone&nbsp;:<br>
-            	05.56.44.09.58
-            </p>
-	  	</div>
-
-	  	<div class="floatRight">
-<!-- TODO : TROUVER BONNE CIBLE du bouton -->
-	  		<a class="btn btn-default" href="#réservation">Je réserve</a>
-	  	</div>
-
 	  </div>
 
 	  <!-- Navbar -->
@@ -131,6 +118,13 @@
 	        <li><a href="#events">Events</a></li>
 	        <li><a href="#facebook">Our facebook</a></li>
 	        <li><a href="#Contact">Contact</a></li>
+
+		  	<div class="floatRight">
+	<!-- TODO : TROUVER BONNE CIBLE du bouton -->
+		  		<a class="btn btn-default" href="#réservation">Je réserve</a>
+		  	</div>
+
+
 
 			<li class="navbar-form navbar-right visible-md visible-lg">
 				<button class="btn btn-default">
@@ -175,7 +169,7 @@
 				</video>
 			</iframe>
 		
-			<!-- < vertical-align center-text white-text-shadow home-banner sail-away"		style="transform: translate3d(0px, 0px, 0px);"> -->
+			 < vertical-align center-text white-text-shadow home-banner sail-away"		style="transform: translate3d(0px, 0px, 0px);"> -->
 			<!-- <img class="scroll-pop-hover"
 				src="img/logo-black.png" alt="" title="Our beautiful pig"
 				aria-hidden="true" > -->
@@ -230,46 +224,118 @@
 
   	<section id="foodnDrink" class="container">
 
-    	<input type="radio" name="hackyGroup" checked 
-    			class="hackyUnsetter" aria-hidden="true">
-
-  		<div class="row">
-  			<h2 class="text-center">Food &amp; Drinks</h2>
+    	<div class="row">
+  			<h2 class="text-center">Manger &amp; Boire</h2>
   		</div>
 
-  		<div class="row hackyContainer">
+  		<div class="row">
 
-            <div class="col-xs-12 col-sm-6 springer">
-	            <div class="conteneur">
+            <div class="col-sm-6 ">
+               	<!-- Make a modal "window" pop-up.
+               		2 ways : on small devices, a click on the image trigger the evenment ; on devices that support the :hover, a text appears and offers a button to trigger -->
+               	<div class="thumbnail"
+               		 data-toggle="modal" data-target="#menuModal">
+                
+                	<img class="img-responsive" alt="une photo du menu"
+                		 src="img/burger.jpg" title="les repas">
 
-	            	<input type="radio" class="hackyButton"
-	            		name="hackyGroup" aria-hidden="true">
+                	<p class="popper text-center">
+                		Sed ut perspiciatis unde omnis iste natus error sit
+                		voluptatem accusantium doloremque laudantium, totam rem
+                		aperiam, eaque ipsa quae ab illo inventore veritatis et
+                		quasi architecto beatae vitae dicta sunt explicabo.
+                		<br>
+                		<!-- the property data-toggle="modal" make the modal close almost instantly, so we don't use it -->
+                		<button class="btn btn-info"
+                				data-target="#menuModal">
+                			Voir le menu
+                		</button>
+                	</p>
+                
+                </div>
+				
+				<div class="modal fade" id="menuModal"
+					 tabindex="-1" role="dialog"
+					 aria-labelledby="copie du menu des repas">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      
+				      <div class="modal-header">
+				        <p>
+				        	<span class="">les spécialités</span>
+					        <button type="button" class="close"
+					        		data-dismiss="modal" aria-label="Close">
+					        	<span aria-hidden="true">&times;</span>
+					        </button>
+					    </p>
+				      </div>
 
-	            	<div class="thumbnail">
-	                	<img class="img-responsive" alt="the main menu"
-	                		 src="img/main-menu.jpg" title="our main menu">
-	                </div>
+				      <div class="modal-body">
+				        <img class="img-responsive" alt="the main menu"
+				        	src="img/main-menu.jpg"
+				        	title="Régalez-vous !">
+				      </div>
 
-	            </div>
+				  	</div>
+				  </div>
+				</div>
+
             </div>
 
-             <div class="col-xs-12 col-sm-6 springer">
-             	<div class="conteneur">
 
-	            	<input type="radio" class="hackyButton"
-	            		name="hackyGroup" aria-hidden="true">
+            <div class="col-sm-6 ">
+               	<!-- déclenche le chargement d'une «fen'» modale -->
+               	<div class="thumbnail"
+               		 data-toggle="modal" data-target="#cocktailsModal">
+                
+                	<img class="img-responsive"
+                		 alt="une photo du menu des cocktails"
+                		 src="img/cherry-on-top.jpg" title="Les boissons">
 
-	             	<div class="thumbnail">
-	                	<img class="img-responsive" alt="the main menu"
-	                		 src="img/drink-menu.jpg" title="our main menu">
-	                </div>
+                	<p class="popper text-center">
+                		Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+                		aut odit aut fugit, sed quia consequuntur magni dolores
+                		eos qui ratione voluptatem sequi nesciunt. Neque porro
+                		quisquam est, qui dolorem ipsum quia, consectetu !
+                		<br>
+                   		<button class="btn btn-info"
+                				data-toggle="modal"
+                				data-target="#cocktailsModal">
+                			Voir le menu
+                		</button>
+              	</p>
+                
+                </div>
+				
+				<div class="modal fade" id="cocktailsModal"
+					 tabindex="-1" role="dialog" aria-labelledby="copie du menu des boissons">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      
+				      <div class="modal-header">
+				      	<p>
+				      		<span>les cocktails</span>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					        	<span aria-hidden="true">&times;</span>
+					        </button>
+					     </p>
+				      </div>
 
-	            </div>
+				      <div class="modal-body">
+				        <img class="img-responsive" alt="the main menu"
+				        	src="img/drink-menu.jpg"
+				        	title="Régalez-vous !">
+				      </div>
+
+				    </div>
+				  </div>
+				</div>
+
             </div>
 
         </div>
 
-  	</section> <!-- .container -->
+  	</section> <!-- #foodnDrinks.container -->
 
 
    
