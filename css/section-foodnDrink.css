@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #foodnDrink .thumbnail {
 	margin: 0;
 	padding: 0;
@@ -11,7 +10,6 @@
 #foodnDrink .thumbnail {
 	margin: 1em;
 	padding: 0;
-	border: 1px solid darkgreen;
 	overflow: hidden;
 
 	/* for positionning the .popper elements */
