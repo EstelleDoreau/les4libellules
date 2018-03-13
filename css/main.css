@@ -20,21 +20,27 @@ section:not(#Contact) {
 /* classes créées pour pouvoir tester / supprimer ensuite ce dont on ne se servira pas */
 .background__dark-green {
 	background-color: #22301e;
+	color: white;
 }
 .background__light-green {
 	background-color: #334524;
+	color: white;
 }
 .background__dark-blue {
 	background-color: #21212d;
+	color: white;
 }
 .background__light-blue {
 	background-color: #45655b;
+	color: white;
 }
 .background__dark-pink {
 	background-color: #3c0717;
+	color: white;
 }
 .background__light-pink {
 	background-color: #730c25;
+	color: white;
 }
 .copy__dark-green {
 	color: #22301e;
