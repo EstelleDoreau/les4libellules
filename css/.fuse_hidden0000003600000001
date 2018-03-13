@@ -1,4 +1,3 @@
-
 /* CSS commun à toutes les sections */
 
 /*font-family: 'Yeseva One', cursive;
@@ -18,8 +17,7 @@ section:not(#Contact) {
 }
 
 
-/* TODO : classes créées pour pouvoir tester / supprimer ensuite ce dont on ne
- se servira pas */
+/* classes créées pour pouvoir tester / supprimer ensuite ce dont on ne se servira pas */
 .background__dark-green {
 	background-color: #22301e;
 	color: white;
