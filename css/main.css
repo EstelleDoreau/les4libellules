@@ -20,6 +20,9 @@ section:not(#Contact):not(#banner) {
 	padding: 4em 0;
 }
 
+a:focus, a:hover {
+    color: white;
+}
 
 /* TODO : classes créées pour pouvoir tester / supprimer ensuite ce dont on ne
  se servira pas */
@@ -102,9 +105,13 @@ section:not(#Contact):not(#banner) {
 	background-color: #21212d;
 }
 
-.button a {
-	color: white;
-}
-.button a:hover, .button a:focus, .button a:active{
+a.button:hover, a.button:focus, a.button:active{
 	text-decoration: none;
+}
+
+.button--center {
+	display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem 0;
 }
