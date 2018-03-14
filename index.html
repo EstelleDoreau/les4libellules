@@ -43,6 +43,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!--header-->
     <link rel="stylesheet" type="text/css" href="css/section-header.css">
+    <link rel="stylesheet" href="css/section-header-imported.css">
     <!--food'nDrink-->
     <link rel="stylesheet" type="text/css" href="css/section-foodnDrink.css">
   	<!-- masonry -->
@@ -70,66 +71,59 @@
 
 	<!-- nav et bannière -->
 
-  	<header>
+    <div id="primary-column">
 
-  	  <!-- top fixed bar -->
-  <!-- TODO : make it disapear when scrolling down, visible when scrolling up ?-->
-  	  <div class="headBar">
+      <header class="border-bottom">
 
-  	  	<div class="mainTitle font-title text-center
-  	  			visible-sm visible-md visible-lg">
-  	  		<p class="mini font-title">THE</p>
-  	  		<p>Market Tavern</p>
-  	  	</div>
+        <div class="container">
+          <a class="toggle-mobile-nav hamburger hamburger--squeeze js-hamburger" href="#">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </a>
 
-  	  </div>
+              
+          <h1>
+            <div class="mainTitle font-title text-center
+                  visible-sm visible-md visible-lg">
+              <p class="mini font-title">THE</p>
+              <p>Market Tavern</p>
+            </div>
 
-  	  <!-- Navbar -->
-  	  <nav class="navbar navbar-default navbar-center">
+            <img class="headPig" src="img/logos/logo_black_transparent_no_letters.png">
+          </h1>
 
-  	    <!-- Brand and toggle get grouped for better mobile display -->
-  	    <div class="navbar-header">
+        </div>
 
-  	      <button type="button" class="navbar-toggle collapsed"
-                  data-toggle="collapse" data-target="#theMenu" aria-expanded="false">
-  	        <span class="sr-only">Changer de mode de navigation</span>
-  	        <span class="icon-bar"></span>
-  	        <span class="icon-bar"></span>
-  	        <span class="icon-bar"></span>
-  	      </button>
+      </header>
 
- <!--  	      <img class="navbar-brand navbar-left img-responsive"
-        		alt="Our marvelous pig-branded logo"
-        		title="Our logo is a fat,tasty flying pig (on the ground for now)"
-        		src="img/logos/logo_black_transparent_background.png">
- -->
-        	  <div class="navbar-brand navbar-left visible-xs">
-        	  	<p class="title-xs font-title">the Market Tavern</p>
-        	  </div>
-
-  	    </div>
-
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="theMenu">
-       
-          <ul class="nav navbar-nav">
+      <nav class="primary">
+        <ul class="container inline center">
             <li><a href="#aboutUs">À propos du pub</a></li>
             <li><a href="#foodnDrink">Boire &amp; manger</a></li>
             <li><a href="#LiveSports">Sport en live </a></li>
             <li><a href="#events">Événements</a></li>
             <li><a href="#facebook">Notre facebook</a></li>
             <li><a href="#Contact">Contact</a></li>
-          </ul>
-        
-          <a class="btn btn-default navbar-right" href="#Contact__informations">Je réserve</a>
-        </div>
+        </ul>
+      </nav>
 
-  	  </nav>
+      <a class="btn btn-default navbar-right" href="#Contact__informations">Je réserve</a>
 
-    </header>
+      <div class="navbar-brand navbar-left visible-xs">
+        <p class="title-xs font-title">the Market Tavern</p>
+      </div>
+
+ <!--         <img class="navbar-brand navbar-left img-responsive"
+            alt="Our marvelous pig-branded logo"
+            title="Our logo is a fat,tasty flying pig (on the ground for now)"
+            src="img/logos/logo_black_transparent_background.png">
+ -->
+
+    </div> <!-- top of head of page -->
 
 
+    <!-- banner -->
 
     <section id="banner" class="container-fluid">
       <div class="row parentSurimpressed">
@@ -619,6 +613,8 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="JS/header.js"></script>
 
     <!-- Bootstrap : Latest compiled and minified JavaScript -->
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"

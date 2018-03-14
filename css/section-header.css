@@ -21,6 +21,12 @@ header .headBar {
     }
 }
 
+
+header .headPig {
+    max-height: 10vh;
+}
+
+
 header .mainTitle {
 	display: inline-block;
 	text-align: center;
@@ -50,12 +56,6 @@ header img.navbar-brand {
 	max-height: 100%;
 	margin: 0;
 	padding: 0;
-}
-
-
-header .container-fluid {
-	padding: 0;
-	margin: 5% 0;
 }
 
 
@@ -91,14 +91,11 @@ header .navbar-default .navbar-nav > li {
 
 
 
-header .navbar-default .navbar-nav > li > a {
+nav.primary ul > li > a {
 	font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 	font-size: 1rem;
 }
-
-
-header .navbar-default .navbar-nav > li > a:hover { text-decoration: underline }
 
 
 
