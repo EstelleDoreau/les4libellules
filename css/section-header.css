@@ -54,10 +54,18 @@
 
 #primary-column ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
 
-    justify-content: space-between;
+
+}
+
+@media (min-width: 768px) {
+	#primary-column ul {
+justify-content: space-between;
+    flex-direction: row;
+}
+
 }
 
 nav.primary ul > li > a {

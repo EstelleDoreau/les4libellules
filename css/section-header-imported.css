@@ -142,30 +142,30 @@ ul li {
     padding-top: 16px
 }
 
-header {
+#Header {
     padding-bottom: 18px;
     background: #fff
 }
 
 
-header h1 {
+#Header h1 {
     display: block;
     margin: 0 auto;
     text-align: center
 }
 
-header h1 a {
+#Header h1 a {
     display: block;
     width: 318px;
     margin: 0 auto
 }
 
-header h1 a img {
+#Header h1 a img {
     display: block;
     width: 100%
 }
 
-header .toggle-mobile-nav {
+#Header .toggle-mobile-nav {
     display: none;
     float: left;
     left: 0;
@@ -303,7 +303,7 @@ html.touch nav.primary ul li a:after {
     #primary-column {
         padding-top: 0
     }
-    header {
+    #Header {
         position: fixed;
         box-shadow: 0 2px 5px rgba(100, 100, 100, .1);
         top: 0;
@@ -311,12 +311,12 @@ html.touch nav.primary ul li a:after {
         width: 100%;
         padding: 14px 0 15px
     }
-    header h1 a {
+    #Header h1 a {
         width: 190px;
         margin: 0 auto
     }
 
-    header .toggle-mobile-nav {
+    #Header .toggle-mobile-nav {
         display: block
     }
 
@@ -324,7 +324,7 @@ html.touch nav.primary ul li a:after {
         margin-top: 67px
     }
     footer,
-    header,
+    #Header,
     main,
     nav.primary {
         -webkit-transition: transform .4s ease-in-out;
@@ -366,7 +366,7 @@ html.touch nav.primary ul li a:after {
     body.mobile-nav {
         overflow: hidden
     }
-    body.mobile-nav header,
+    body.mobile-nav #Header,
     body.mobile-nav main {
         -webkit-transform: translate3d(185px, 0, 0);
         transform: translate3d(185px, 0, 0)
@@ -381,28 +381,28 @@ html.touch nav.primary ul li a:after {
     }
 }
 
-body.sticky-nav nav.primary {
+#Header.sticky-nav ~ nav.primary {
     position: fixed;
     z-index: 999;
     top: 0
 }
 
-body.sticky-nav nav.primary h1 {
+#Header.sticky-nav ~ nav.primary h1 {
     visibility: visible;
     opacity: 1
 }
 
-body.sticky-nav nav.primary h1 {
+#Header.sticky-nav ~ nav.primary h1 {
     left: 30px
 }
 
 
-body.sticky-nav.admin-bar nav.primary {
+#Header.sticky-nav.admin-bar ~ nav.primary {
     top: 32px
 }
 
 @media (min-width:768px) and (max-width:991px) {
-    body.sticky-nav nav.primary ul li a {
+    #Header.sticky-nav ~ nav.primary ul li a {
         margin: 0 10px
     }
 }
