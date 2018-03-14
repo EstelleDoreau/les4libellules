@@ -40,6 +40,11 @@
 }
 
 
+#primary-column .headPig {
+    max-height: 10vh;
+}
+
+
 /* navbar styling */
 
 #primary-column .navbar-default {
