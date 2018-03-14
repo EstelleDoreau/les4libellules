@@ -214,9 +214,7 @@ nav.primary ul li:last-child a {
 }
 */
 @media (max-width:767px) {
-    nav.primary ul li a {
-        font-size: 10px
-    }
+    nav.primary ul li a { font-size: 10px }
 }
 
 nav.primary ul li a:after {
