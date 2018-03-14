@@ -1,22 +1,48 @@
+#foodnDrink .thumbnail {
+	margin: 1em;
+	padding: 0;
 
- .thumbnail{
-	 border: none;
-	 
-	 
+	background-color: transparent;
+	border: none;
+
+	overflow: hidden;
+
+	/* for positionning the .popper elements */
+	position: relative;
 }
 
 
+#foodnDrink .popper {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 
-h2{
-	text-align: center;
+	padding: 4% 8%;
+	margin: 0;
 	
+	font-family: 'PT Sans Caption', sans-serif;
+	color: white;
+
+	text-shadow: 1px 1px black, 1px -1px black, -1px -1px black, -1px 1px black;
+}
+
+/* the "hover" media query is not recognised under today's firefox ...
+Sorry, I'm using an ugly approximation. I DID IT UNDER THE THREAT OF
+ ESTELLE, I'LL NEVER DO SOMETHING AS UGLY AS TESTING DEVICE WIDTH WHEN
+  I WANT SOMETHING TOTALLY DIFFERENT AS ":hover" SUPPORT  BY MYSELF*/
+@media (hover: hover),
+	   screen and (min-width: 800px) {
+	#foodnDrink .popper {
+		transform: translateX(-100%);
+		transition: transform 0.3s;
 	}
 
-.row{
- 
+	#foodnDrink .thumbnail:hover .popper {
+		transform: none
+	}
 }
 
-.burger{
-	width: 30%;
-	margin-left: 70%;
+
+#foodnDrink .popper .btn {
+	margin-top: 4%;
 }

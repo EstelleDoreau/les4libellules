@@ -1,14 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-	  
-	  
-	  
-    
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
             
     <title>The Market Tavern</title>
@@ -39,10 +33,11 @@
     <!-- font awesome, for beautiful icon fonts -->
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
       <!-- https://fontawesome.com/how-to-use/upgrading-from-4#v4-shim -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js">
-    </script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/v4-shims.js">
-    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/v4-shims.js"></script>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|PT+Sans+Caption:400,700|Yeseva+One" rel="stylesheet">
 
      <!-- main -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -50,9 +45,8 @@
     <link rel="stylesheet" type="text/css" href="css/section-header.css">
     <!--food'nDrink-->
     <link rel="stylesheet" type="text/css" href="css/section-foodnDrink.css">
-
   	<!-- masonry -->
-  	<link rel="stylesheet" type="text/css" href="masonry.css">
+  	<link rel="stylesheet" type="text/css" href="css/section_masonry.css">
     <!-- events -->
     <link rel="stylesheet" type="text/css" href="css/section_events.css">
     <!-- facebook -->
@@ -63,12 +57,8 @@
     <link rel="stylesheet" type="text/css" href="css/section_footer.css">
 
 
-	<script
-		src="https://code.jquery.com/jquery-3.3.1.min.js"
-		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-		crossorigin="anonymous"></script>
-
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  
   	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   	<!--[if lt IE 9]>
   	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -77,107 +67,87 @@
   </head>
 
   <body>
-	<!-- nav et bannière : Sébastien -->
 
-	<header>
+	<!-- nav et bannière -->
 
-	  <div class="centerMaker">
-	  	<div class="mainTitle font-title visible-sm visible-md visible-lg">
-	  		<p class="mini font-title">THE</p>
-	  		<p>Market Tavern</p>
-	  	</div>
-	  </div>
+  	<header>
 
-	  <!-- Navbar -->
-	  <nav class="navbar navbar-default navbar-center">
+  	  <!-- top fixed bar -->
+  <!-- TODO : make it disapear when scrolling down, visible when scrolling up ?-->
+  	  <div class="headBar">
 
-	    <!-- Brand and toggle get grouped for better mobile display -->
-	    <div class="navbar-header">
+  	  	<div class="mainTitle font-title text-center
+  	  			visible-sm visible-md visible-lg">
+  	  		<p class="mini font-title">THE</p>
+  	  		<p>Market Tavern</p>
+  	  	</div>
 
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#theMenu" aria-expanded="false">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
+  	  </div>
 
-	      <img class="navbar-brand navbar-left img-responsive"
-      		alt="Our marvelous pig-branded logo"
-      		title="Our logo is a fat,tasty flying pig (on the ground for now)"
-      		src="img/logos/logo_black_transparent_background.png" >
+  	  <!-- Navbar -->
+  	  <nav class="navbar navbar-default navbar-center">
 
-      	  <div class="navbar-brand navbar-left visible-xs">
-      	  	<p class="title-xs font-title">the Market Tavern</p>
-      	  </div>
+  	    <!-- Brand and toggle get grouped for better mobile display -->
+  	    <div class="navbar-header">
 
-	    </div>
+  	      <button type="button" class="navbar-toggle collapsed"
+                  data-toggle="collapse" data-target="#theMenu" aria-expanded="false">
+  	        <span class="sr-only">Changer de mode de navigation</span>
+  	        <span class="icon-bar"></span>
+  	        <span class="icon-bar"></span>
+  	        <span class="icon-bar"></span>
+  	      </button>
 
- 
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse navbar-right" id="theMenu">
-	      <ul class="nav navbar-nav navbar-left">
-	        <li><a href="#aboutUs">About us</a></li>
-	        <li><a href="#foodnDrink">Food 'n Drink</a></li>
-	        <li><a href="#LiveSports">Live sport</a></li>
-	        <li><a href="#events">Events</a></li>
-	        <li><a href="#facebook">Our facebook</a></li>
-	        <li><a href="#Contact">Contact</a></li>
+ <!--  	      <img class="navbar-brand navbar-left img-responsive"
+        		alt="Our marvelous pig-branded logo"
+        		title="Our logo is a fat,tasty flying pig (on the ground for now)"
+        		src="img/logos/logo_black_transparent_background.png">
+ -->
+        	  <div class="navbar-brand navbar-left visible-xs">
+        	  	<p class="title-xs font-title">the Market Tavern</p>
+        	  </div>
 
-			<li class="navbar-form navbar-right visible-md visible-lg">
-				<button class="btn btn-default">
-					<span class="glyphicon glyphicon-search" aria-hidden="true">
-					</span>
-				</button>
-		    </li>
-
-	      </ul>
-	    </div>
-
-	  </nav>
-
-	  <div class="container-fluid">
-	  	<div class="row parentSurimpressed">
-	  		<img class="img-responsive" src="img/bannerImg.jpg"
-	  			 alt="" aria-hidden="true">
-
-	  		<img class="surimpressedOnParent img-responsive"
-				src="img/logos/logo.png"
-				alt="" title="Our beautiful pig"
-				aria-hidden="true" >
-	  	</div>
-	  </div>
+  	    </div>
 
 
-		<!-- <div class="embed-responsive embed-responsive-16by9">
-            <div class="overlay"></div>
-            
-            <iframe class="embed-responsive-item" src="https://www.thefoodlens.com/uploads/2018/01/pagu-nobar.mp4">
-    		</iframe>
-            
-        </div> -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="theMenu">
+       
+          <ul class="nav navbar-nav">
+            <li><a href="#aboutUs">À propos du pub</a></li>
+            <li><a href="#foodnDrink">Boire &amp; manger</a></li>
+            <li><a href="#LiveSports">Sport en live </a></li>
+            <li><a href="#events">Événements</a></li>
+            <li><a href="#facebook">Notre facebook</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        
+          <a class="btn btn-default navbar-right" href="#Contact__informations">Je réserve</a>
+        </div>
 
-		<!-- <div class="embed-responsive">
-			<iframe class="embed-responsive-item">
-				<video autoplay loop muted
-					poster="https://www.thefoodlens.com/uploads/2018/01/pagu-nobar-preview.jpg"
-					style="width: 1260.44px; height: 709px; top: 0px; left: -401.722px;">
-						<source src="https://www.thefoodlens.com/uploads/2018/01/pagu-nobar.mp4"
-					type="video/mp4">
-				</video>
-			</iframe>
-		
-			 vertical-align center-text white-text-shadow home-banner sail-away"		style="transform: translate3d(0px, 0px, 0px);"> -->
-			<!-- <img class="scroll-pop-hover"
-				src="img/logo-black.png" alt="" title="Our beautiful pig"
-				aria-hidden="true" > -->
-		<!--.embed-responsive -->
+  	  </nav>
 
-	  </header>
+    </header>
 
 
-  	<!-- présentation : Aurélie -->
+    <section id="banner" class="container-fluid">
+      <div class="row parentSurimpressed">
 
-      <section id="presentation">
+        <img class="img-responsive" src="img/banner.jpg"
+           alt="" aria-hidden="true">
+
+        <img class="surimpressedOnParent img-responsive"
+          src="img/logos/logo.png"
+          alt="" title="Our beautiful pig"
+          aria-hidden="true" >
+
+      </div>
+
+
+
+  	<!-- présentation -->
+  	<section id="presentation">
+
           <div class="container">
              <div class="row">
                  <div class="col-xs-12 ">
@@ -206,401 +176,455 @@
                         <p class="text-center"><a class="btn btn-primary" href="http://hop-pub.com/the-bordeaux-pub/bordeaux-pub-group/" target="_blank" role="button">The Bordeaux Pub</a></p>   
                      
                      </div>
-                 
-                 </div>
+                 </div>     
+          </div>
+
+  	</section>
+
+
+
+
+    <!-- menu / food & drink -->
+  	<section id="foodnDrink" class="container">
+
+    	<div class="row">
+  			<h2 class="text-center">Manger &amp; Boire</h2>
+  		</div>
+
+  		<div class="row">
+
+        <div class="col-sm-6 ">
+           	<!-- Make a modal "window" pop-up.
+           		2 ways : on small devices, a click on the image trigger the evenment ; on devices that support the :hover, a text appears and offers a button to trigger -->
+           	<div class="thumbnail"
+           		 data-toggle="modal" data-target="#menuModal">
+            
+            	<img class="img-responsive" alt="une photo du menu"
+            		 src="img/burger.jpg" title="cliquez sur l'image pour voir le menu des plats cuisinés">
+
+            	<p class="popper text-center" title="cliquez ici pour voir le menu des plats cuisinés">
+            		Sed ut perspiciatis unde omnis iste natus error sit
+            		voluptatem accusantium doloremque laudantium, totam rem
+            		aperiam, eaque ipsa quae ab illo inventore veritatis et
+            		quasi architecto beatae vitae dicta sunt explicabo.
+            		<br>
+            		<!-- the property data-toggle="modal" make the modal close almost instantly, so we don't use it -->
+            		<button class="btn btn-info"
+            				data-target="#menuModal">
+            			Voir le menu
+            		</button>
+            	</p>
+            
+            </div>
+		
+    				<!-- modal pop-up -->
+            <div class="modal fade" id="menuModal"
+    					 tabindex="-1" role="dialog"
+    					 aria-labelledby="copie du menu des repas">
+    				  <div class="modal-dialog" role="document">
+    				    <div class="modal-content">
+    				      
+    				      <div class="modal-header">
+    				        <p>
+    				        	<span class="">les spécialités</span>
+    					        <button type="button" class="close"
+    					        		data-dismiss="modal" aria-label="Close">
+    					        	<span aria-hidden="true">&times;</span>
+    					        </button>
+    					    </p>
+    				      </div>
+
+    				      <div class="modal-body">
+    				        <img class="img-responsive" alt="the main menu"
+    				        	src="img/main-menu.jpg"
+    				        	title="Régalez-vous !">
+    				      </div>
+
+    				  	</div>
+    				  </div>
+    				</div>
+
+        </div> <!-- .col-sm-6 -->
+
+
+        <div class="col-sm-6 ">
+            <!-- same as before ↑ -->
+           	<div class="thumbnail"
+           		 data-toggle="modal" data-target="#cocktailsModal">
+            
+            	<img class="img-responsive"
+            		 alt="une photo du menu des cocktails"
+            		 src="img/biere.jpg" title="Cliquez sur l'image pour accéder au menu des boissons">
+
+            	<p class="popper text-center" title="cliquez ici pour voir le menu des boissons">
+            		Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+            		aut odit aut fugit, sed quia consequuntur magni dolores
+            		eos qui ratione voluptatem sequi nesciunt. Neque porro
+            		quisquam est, qui dolorem ipsum quia, consectetu !
+            		<br>
+               	<button class="btn btn-info"
+            				data-toggle="modal"
+            				data-target="#cocktailsModal">
+            			  Voir le menu
+            		</button>
+          	  </p>
+            
+            </div>
+		
+    				<!-- modal pop-up -->
+            <div class="modal fade" id="cocktailsModal"
+    					 tabindex="-1" role="dialog" aria-labelledby="copie du menu des boissons">
+    				  <div class="modal-dialog" role="document">
+    				    <div class="modal-content">
+    				      
+    				      <div class="modal-header">
+    				      	<p>
+    				      		<span>les cocktails</span>
+    					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    					        	<span aria-hidden="true">&times;</span>
+    					        </button>
+    					     </p>
+    				      </div>
+
+    				      <div class="modal-body">
+    				        <img class="img-responsive" alt="the main menu"
+    				        	src="img/drink-menu.jpg"
+    				        	title="Régalez-vous !">
+    				      </div>
+
+    				    </div>
+    				  </div>
+    				</div>
+
+        </div>
+
+    </section> <!-- #foodnDrink -->
+
+
+
+    <!-- live sport -->
+  	<section id="LiveSports"> 		
+  	   <div class="container">
+          <h2>Live Sports</h2>
+          <div class="row square-section">
+          		<div class="col-sm-12 article-list" id="sides-list">
+          				<article class="the-side big big-left scroll-pop fade-in popped">
+          					<a href="img/programmesport.jpg" id="afficheimage" target="_BLANK">
+          						<div class="art">
+          							<img src="img/imgresize/foot1.jpg"  alt="photostadedefoot"/>
+          						</div>
+          						<div class="article-content content">
+          							<div class="inner">
+          								<ul class="super-list"><li>Mars, 2018</li></ul>
+          								<h4>Barclays premier league, Ligue 1.....</h4>
+          								<span class="more pink">Voir le programme</span>
+          							</div>
+          						</div>
+          					</a>
+          				</article>
+          				<article class="the-side small small-right img-right scroll-pop fade-in popped">
+          					<a href="#">
+          						<div class="art">
+          							<img src="img/imgresize/allblacks.jpg" alt="photorugby">
+          						</div>
+          						<div class="article-content content">
+          							<div class="inner">
+          								<ul class="super-list"></ul>
+          								<h4>Rugby </h4>
+          								<span class="more pink"></span>
+          							</div>
+          						</div>
+          					</a>
+          				</article>
+          				<article class="the-side small small-right img-left scroll-pop fade-in popped">
+          					<a href="#presentation">
+          						<div class="art">
+          							<img src="img/imgresize/logoretouche.png" alt="logo" >
+          						</div>
+          						<div class="article-content content">
+          							<div class="inner">
+          								<ul class="super-list"><li>Mars 2018</li></ul>
+          								<h4>The gastro Pub</h4>
+          								
+          							</div>
+          						</div>
+          					</a>
+          				</article>
+          				<article class="the-side big big-right scroll-pop fade-in popped">
+          					<a href="#">
+          						<div class="art">
+          							<img src="img/imgresize/soccer3.jpg" alt="photopub">
+          						</div>
+          						<div class="article-content content">
+          							<div class="inner">
+          								<ul class="super-list"><li></li></ul>
+          								<h4>Happy Hour</h4>
+          								
+          							</div>
+          						</div>
+          					</a>
+          				</article>
+          				<article class="the-side small small-left img-left scroll-pop fade-in popped">
+          					<a href="img/drink-menu.jpg" target="_blank">
+          						<div class="art">
+          							<img src="img/imgresize/soccerbar.jpg" alt="pub">
+          						</div>
+          						<div class="article-content content">
+          							<div class="inner">
+          								<ul class="super-list"><li></li></ul>
+          								<h4>Bar</h4>
+          								
+          							</div>
+          						</div>
+          					</a>
+          				</article>
+          				<article class="the-side small small-left img-right scroll-pop fade-in popped">
+          					<a href="img/Menu.jpg" target="_blank">
+          						<div class="art">
+          							<img src="img/imgresize/burger.jpg" alt="burger" >
+          						</div>
+          						<div class="article-content content">
+          							<div class="inner">
+          								<ul class="super-list"><li></li></ul>
+          								<h4>Happy Burger</h4>
+          								
+          							</div>
+          						</div>
+          					</a>
+          				</article>
+          			</div>
+          	</div>
+    		</div>
+      </section>
       
-                        
-          </div>
+      
+    <!-- Events : Aurélie -->
+      
+      <section id="events">
+         <div class="container">
+             <div class="row">
+                 <div class="col-xs-12 text-center">
+                     <h2>Events</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                 </div>
+             </div>     
+             
           
-          
-  	  </section>  
 
-
-  	<!-- menu / food & drink : Sébastien -->
-<section>
-	
-	<h2>Food and Drinks </h2>
-<div class="container-fluid">
-		<div class="row">
-  <div class="col-xs-6 col-md-3">
-    <a href="#bière" class="thumbnail beer" id="bière">
-      <img src="http://static.cnewsmatin.fr/sites/default/files/biere_7.jpg" alt="bière">
-	
-    </a>
-	  
-	  <img src="img/drink-menu.jpg" alt="photo" class="menubeer" />
-	  
-  </div>
- <a href="#burger" class="thumbnail burger" id="burger">
-      <img src="https://vivreparis.fr/wp-content/uploads/2018/01/image-1.jpg"  alt="burger" width="370" class="pictureburger">
-	 
-	 
-	<img src="img/Menu.jpg" alt="" class="image"  />
-			</a>
-			
-				<script type="text/javascript">
-			
-			$("document").ready(function(){
-				$(".image").hide();
-				$(".burger").click(function(){
-					$(".image").slideToggle("slow",function(){
-						
-					})
-					
-				})
-				
-				
-				$(".menubeer").hide();
-				$(".beer").click(function(){
-					$(".menubeer").slideToggle("slow",function(){
-						
-					})
-					
-				})
-				
-			})
-			
-		</script>
-			
-</div>
-		</div>
-		
-		
-		
-		
-		
-	</section>
-      <!-- live sport -->
-    	<section id="LiveSports"> 		
-    	   <div class="container">
-            <h2>Live Sports</h2>
-            <div class="row square-section">
-            		<div class="col-sm-12 article-list" id="sides-list">
-            				<article class="the-side big big-left scroll-pop fade-in popped">
-            					<a href="img/programmesport.jpg" id="afficheimage" target="_BLANK">
-            						<div class="art">
-            							<img src="img/imgresize/foot1.jpg"  alt="photostadedefoot"/>
-            						</div>
-            						<div class="article-content content">
-            							<div class="inner">
-            								<ul class="super-list"><li>Mars, 2018</li></ul>
-            								<h4>Barclays premier league, Ligue 1.....</h4>
-            								<span class="more pink">Voir le programme</span>
-            							</div>
-            						</div>
-            					</a>
-            				</article>
-            				<article class="the-side small small-right img-right scroll-pop fade-in popped">
-            					<a href="#">
-            						<div class="art">
-            							<img src="img/imgresize/allblacks.jpg" alt="photorugby">
-            						</div>
-            						<div class="article-content content">
-            							<div class="inner">
-            								<ul class="super-list"></ul>
-            								<h4>Rugby </h4>
-            								<span class="more pink"></span>
-            							</div>
-            						</div>
-            					</a>
-            				</article>
-            				<article class="the-side small small-right img-left scroll-pop fade-in popped">
-            					<a href="#presentation">
-            						<div class="art">
-            							<img src="img/imgresize/logoretouche.png" alt="logo" >
-            						</div>
-            						<div class="article-content content">
-            							<div class="inner">
-            								<ul class="super-list"><li>Mars 2018</li></ul>
-            								<h4>The gastro Pub</h4>
-            								
-            							</div>
-            						</div>
-            					</a>
-            				</article>
-            				<article class="the-side big big-right scroll-pop fade-in popped">
-            					<a href="#">
-            						<div class="art">
-            							<img src="img/imgresize/soccer3.jpg" alt="photopub">
-            						</div>
-            						<div class="article-content content">
-            							<div class="inner">
-            								<ul class="super-list"><li></li></ul>
-            								<h4>Happy Hour</h4>
-            								
-            							</div>
-            						</div>
-            					</a>
-            				</article>
-            				<article class="the-side small small-left img-left scroll-pop fade-in popped">
-            					<a href="img/drink-menu.jpg" target="_blank">
-            						<div class="art">
-            							<img src="img/imgresize/soccerbar.jpg" alt="pub">
-            						</div>
-            						<div class="article-content content">
-            							<div class="inner">
-            								<ul class="super-list"><li></li></ul>
-            								<h4>Bar</h4>
-            								
-            							</div>
-            						</div>
-            					</a>
-            				</article>
-            				<article class="the-side small small-left img-right scroll-pop fade-in popped">
-            					<a href="img/Menu.jpg" target="_blank">
-            						<div class="art">
-            							<img src="img/imgresize/burger.jpg" alt="burger" >
-            						</div>
-            						<div class="article-content content">
-            							<div class="inner">
-            								<ul class="super-list"><li></li></ul>
-            								<h4>Happy Burger</h4>
-            								
-            							</div>
-            						</div>
-            					</a>
-            				</article>
-            			</div>
-            	</div>
-      		</div>
-        </section>
-        
-        
-      <!-- Events : Aurélie -->
-        
-        <section id="events">
-           <div class="container">
-               <div class="row">
-                   <div class="col-xs-12 text-center">
-                       <h2>Events</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                   </div>
-               </div>     
-               
-               <!-- <div class="row">
-                   <div class="col-xs-6 col-md-3">
-                      <div class="thumbnail">
-                      <img src="img/cocktail.jpg" alt="cocktail">
-                      </div>
-                   </div>
-    
-                   <div class="col-xs-6 col-md-3">
-                      <div class="thumbnail">
-                      <img src="img/facebook_tavern.jpg" alt="party">
-                      </div>
-                   </div>
-                   
-                   <div class="col-xs-6 col-md-3">
-                      <div class="thumbnail">
-                      <img src="img/soiree2.jpg" alt="party2">
-                      </div>
-                   </div>
-                   
-                   <div class="col-xs-6 col-md-3">
-                      <div class="thumbnail">
-                      <img src="img/cocktail2.jpg" alt="cocktail2">
-                      </div>
-                   </div>
-              </div> -->
-
-              <div class="row">
-                <div class="col-md-4">
-                   <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthemarkettavernbordeaux%2F&tabs=events%2C%20timeline%2C%20messages&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-                </div>
-                <div class="col-md-8">
-                  <div class="row">
-                    <div class="col-xs-6">
-                      <div class="thumbnail">
-                      <img src="img/cocktail.jpg" alt="cocktail">
-                      </div>
-                   </div>
-    
-                   <div class="col-xs-6">
-                      <div class="thumbnail">
-                      <img src="img/facebook_tavern.jpg" alt="party">
-                      </div>
-                   </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-xs-6">
-                      <div class="thumbnail">
-                      <img src="img/soiree2.jpg" alt="party2">
-                      </div>
-                   </div>
-                   
-                   <div class="col-xs-6">
-                      <div class="thumbnail">
-                      <img src="img/cocktail2.jpg" alt="cocktail2">
-                      </div>
-                   </div>
-                  </div>
-                </div>
+            <div class="row">
+              <div class="col-md-4">
+                 <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthemarkettavernbordeaux%2F&tabs=events%2C%20timeline%2C%20messages&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
               </div>
-          </div>
-        </section>
-
-        <!-- Facebook -->
-        <section id="Facebook">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-12 text-center">
-                  <a href="https://www.facebook.com/themarkettavernbordeaux/" title="Page Facebook The Tavern Market" target="_blank">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-        </section>
-
-  	    <!-- contact -->
-        <section id="Contact">
-            <div class="container">
-                <header class="text-center">
-                    <h2>Contactez-nous</h2>
-                    <p>N'hésitez pas à nous poser des questions.<br>Nous nous ferons un plaisir de vous répondre rapidement.</p>
-                </header>
-                
+              <div class="col-md-8">
                 <div class="row">
-                  <ul id="Contact__informations" class="col-xs-12 col-md-4">
-                    <li>
-                        <a href="tel:+33556440958" title="Téléphone The Market Tavern">
-                            <i class="fa fa-phone"></i>
-                            <p>Téléphone&nbsp;:</p>
-                            <p>05.56.44.09.58</p>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/contact#Contact__map" title="Google map The Market Tavern">
-                            <i class="fa fa-map-marker"></i>
-                            <p>Adresse&nbsp;:</p>
-                            <p>15 rue Rode<br>33 000 Bordeaux</p>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="mailto:themarkettavernbdx@gmail.com" title="Adresse e-mail The Market Tavern">
-                            <i class="fa fa-envelope"></i>
-                            <p>E-mail&nbsp;:</p>
-                            <p>themarkettavernbdx[a]gmail.com</p>
-                        </a>
-                    </li>
-                  </ul>
-                  <form name="contact_form" method="post" action="/contact" class="col-xs-12 col-md-8">           
-                      <div class="form--item">
-                          <label for="contact_form_email">E-mail&nbsp;*</label>
-                          <input type="email" id="contact_form_email" name="contact_form_email" required="required" placeholder="Votre adresse email">
-                      </div>
-                      <div class="form--item">
-                          <label for="contact_form_subject">Sujet&nbsp;*</label>
-                          <select id="contact_form_subject" name="contact_form_subject">
-                              <option value="demande_reservation">Demande de réservation</option>
-                              <option value="job">Candidature</option>
-                              <option value="demande_informations">Demande d'informations</option>
-                              <option value="autres">Autres</option>
-                          </select>
-                      </div>
-                      <div class="form--item">
-                          <label for="contact_form_message">Message&nbsp;*</label>
-                          <textarea id="contact_form_message" name="contact_form_message" required="required" placeholder="Votre message ici"></textarea>
-                      </div>
-                    
-                      <div class="text-center">
-                          <button type="submit" id="contact_form_submit" name="contact_form[submit]" class="button button--blue">Envoyer</button>
-                      </div>
-                  </form>
+                  <div class="col-xs-6">
+                    <div class="thumbnail">
+                    <img src="img/cocktail.jpg" alt="cocktail">
+                    </div>
+                 </div>
+  
+                 <div class="col-xs-6">
+                    <div class="thumbnail">
+                    <img src="img/facebook_tavern.jpg" alt="party">
+                    </div>
+                 </div>
                 </div>
-            </div>
-            <div id="Contact__map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.4784690785136!2d-0.5744638845563494!3d44.852553379098474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd552879c241f0a7%3A0xb03531d05a62180!2sThe+Market+Tavern!5e0!3m2!1sfr!2sfr!4v1520190046157" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-        </section>
-
-        <!-- footer -->
-        <footer>
-          <div class="container">
-              <div id="Footer__socket" class="row">
-                  <div class="col-xs-12 col-md-3">
-                      <img src="img/logos/logo.png" alt="Logo The market Tavern">
-                  </div>
-                  <div class="col-xs-12 col-md-3">
-                      
-                          <h5>Navigation</h5>
-                      
-                      <nav>
-                          <ul>
-                              <li><a href="#" title="Fellows">Fellows</a></li>
-            					        <li><a href="#aboutUs" title="About us">About us</a></li>
-            					        <li><a href="#foodnDrink" title="Food 'n Drink">Food 'n Drink</a></li>
-            					        <li><a href="#liveSport" title="Live sport">Live sport</a></li>
-            					        <li><a href="#events" title="Events">Events</a></li>
-            					        <li><a href="#facebook" title="Our facebook">Our facebook</a></li>
-            					        <li><a href="#contact" title="Contact">Contact</a></li>
-                          </ul>
-                      </nav>
-                  </div>
-
-                  <div class="col-xs-12 col-md-3">
-                      
-                          <h5>Partenaires</h5>
-                      
-                      <nav>
-                          <ul>
-                              <li><a href="http://hmsvictorybordeaux.com/" title="The HMS Victory">The HMS Victory</a></li>
-                              <li><a href="http://hop-pub.com/" title="House of parliament">House of parliament</a></li>
-                              <li><a href="http://rathergoodpubcompany.com/" title="Rather Good Pub Company">Rather Good Pub Company</a></li>
-                          </ul>
-                      </nav>
-                  </div>
-
-                 <div class="col-xs-12 col-md-3">
-                      
-                          <h5>Suivez-nous</h5>
-                      
-                      <nav>
-                          <ul id="Networks">
-                              <li>
-                                  <a href="https://www.facebook.com/themarkettavernbordeaux/" title="Page Facebook The Tavern Market" target="_blank">
-                                      <i class="fa fa-facebook"></i>
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="https://www.instagram.com/themarkettavernbdx/" title="Page Instagram The Tavern Market" target="_blank">
-                                      <i class="fa fa-instagram"></i>
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="https://plus.google.com/s/the%20market%20tavern%20bordeaux/top" title="Google+ The Tavern Market" target="_blank">
-                                      <i class="fa fa-google"></i>
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="https://twitter.com/search?q=the%20market%20tavern%20bordeaux&src=typd&lang=fr" title="Twitter The Tavern Market" target="_blank">
-                                      <i class="fa fa-twitter"></i>
-                                  </a>
-                              </li>
-                          </ul>
-                      </nav>
-                  </div>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <div class="thumbnail">
+                    <img src="img/soiree2.jpg" alt="party2">
+                    </div>
+                 </div>
+                 
+                 <div class="col-xs-6">
+                    <div class="thumbnail">
+                    <img src="img/cocktail2.jpg" alt="cocktail2">
+                    </div>
+                 </div>
+                </div>
               </div>
-          
-              <div id="Footer__footer" class="row text-center">
-                  <p class="Information">©&nbsp;Copyright 2018 The Market Tavern&nbsp;- Réalisation&nbsp;:
-                      <a href="" title="" target="_blank">Les 4 libellules</a>
-                  </p>
+            </div>
+        </div>
+      </section>
+
+
+
+      <!-- Facebook -->
+      <section id="Facebook" class="background__light-pink">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 text-center">
+                <a href="https://www.facebook.com/themarkettavernbordeaux/" title="Page Facebook The Tavern Market" target="_blank">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+
+	    <!-- contact -->
+      <section id="Contact" class="background__dark-pink">
+          <div class="container">
+              <header class="text-center">
+                  <h2>Contactez-nous</h2>
+                  <p>N'hésitez pas à nous poser des questions.<br>Nous nous ferons un plaisir de vous répondre rapidement.</p>
+              </header>
+              
+              <div class="row">
+                <ul id="Contact__informations" class="col-xs-12 col-md-4">
+                  <li>
+                      <a href="https://www.google.fr/maps/place/The+Market+Tavern/@44.8525534,-0.5722752,15z/data=!4m5!3m4!1s0x0:0xb03531d05a62180!8m2!3d44.8525534!4d-0.5722752" title="Horaires The Market Tavern" target="_BLANK">
+                          <i class="fa fa-clock"></i>
+                          <p>Horaires&nbsp;:</p>
+                          <p>Du lundi au vendredi&nbsp;: 12h-00h</p>
+                          <p>Le week-end&nbsp;: 12h-02h</p>
+                          <p>Restauration&nbsp;:</p>
+                          <p>Du lundi au vendredi&nbsp;: 12h-14h30 / 19h-22h</p>
+                          <p>Le week-end&nbsp;: 12h30-15h / 19h-22h</p>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="tel:+33556440958" title="Téléphone The Market Tavern">
+                          <i class="fa fa-phone"></i>
+                          <p>Téléphone&nbsp;:</p>
+                          <p>05.56.44.09.58</p>
+                      </a>
+                  </li>
+
+                  <li>
+                      <a href="/contact#Contact__map" title="Google map The Market Tavern">
+                          <i class="fa fa-map-marker"></i>
+                          <p>Adresse&nbsp;:</p>
+                          <p>15 rue Rode<br>33 000 Bordeaux</p>
+                      </a>
+                  </li>
+
+                  <li>
+                      <a href="mailto:themarkettavernbdx@gmail.com" title="Adresse e-mail The Market Tavern">
+                          <i class="fa fa-envelope"></i>
+                          <p>E-mail&nbsp;:</p>
+                          <p>themarkettavernbdx[a]gmail.com</p>
+                      </a>
+                  </li>
+                </ul>
+                <form name="contact_form" method="post" action="/contact" class="col-xs-12 col-md-8">           
+                    <div class="form--item">
+                        <label for="contact_form_email">E-mail&nbsp;*</label>
+                        <input type="email" id="contact_form_email" name="contact_form_email" required="required" placeholder="Votre adresse email">
+                    </div>
+                    <div class="form--item">
+                        <label for="contact_form_subject">Sujet&nbsp;*</label>
+                        <select id="contact_form_subject" name="contact_form_subject">
+                            <option value="demande_reservation">Demande de réservation</option>
+                            <option value="job">Candidature</option>
+                            <option value="demande_informations">Demande d'informations</option>
+                            <option value="autres">Autres</option>
+                        </select>
+                    </div>
+                    <div class="form--item">
+                        <label for="contact_form_message">Message&nbsp;*</label>
+                        <textarea id="contact_form_message" name="contact_form_message" required="required" placeholder="Votre message ici"></textarea>
+                    </div>
+                  
+                    <div class="text-center">
+                        <button type="submit" id="contact_form_submit" name="contact_form[submit]" class="button">Envoyer</button>
+                    </div>
+                </form>
               </div>
           </div>
-      </footer>
- 
-
-    	<!-- Bootstrap : Latest compiled and minified JavaScript -->
-    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-    		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    		crossorigin="anonymous">
-    	</script>
-	
-	
+          <div id="Contact__map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.4784690785136!2d-0.5744638845563494!3d44.852553379098474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd552879c241f0a7%3A0xb03531d05a62180!2sThe+Market+Tavern!5e0!3m2!1sfr!2sfr!4v1520190046157" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+      </section>
 
 
-    </body>
-  </html>
+
+      <!-- footer -->
+      <footer>
+        <div class="container">
+            <div id="Footer__socket" class="row">
+                <div class="col-xs-12 col-md-3">
+                    <img src="img/logos/logo.png" alt="Logo The market Tavern">
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    
+                        <h5>Navigation</h5>
+                    
+                    <nav>
+                        <ul>
+                            <li><a href="#" title="À propos">À propos</a></li>
+          					        <li><a href="#aboutUs" title="About us">About us</a></li>
+          					        <li><a href="#foodnDrink" title="Boire et manger">Boire et manger</a></li>
+          					        <li><a href="#liveSport" title="Sport en live">Sport en live</a></li>
+          					        <li><a href="#events" title="Événements">Événements</a></li>
+          					        <li><a href="#facebook" title="Notre facebook">Notre facebook</a></li>
+          					        <li><a href="#contact" title="Contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-xs-12 col-md-3">
+                    
+                        <h5>Partenaires</h5>
+                    
+                    <nav>
+                        <ul>
+                            <li><a href="http://hmsvictorybordeaux.com/" title="The HMS Victory">The HMS Victory</a></li>
+                            <li><a href="http://hop-pub.com/" title="House of parliament">House of parliament</a></li>
+                            <li><a href="http://rathergoodpubcompany.com/" title="Rather Good Pub Company">Rather Good Pub Company</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+               <div class="col-xs-12 col-md-3">
+                    
+                        <h5>Suivez-nous</h5>
+                    
+                    <nav>
+                        <ul id="Networks">
+                            <li>
+                                <a href="https://www.facebook.com/themarkettavernbordeaux/" title="Page Facebook The Tavern Market" target="_blank">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/themarkettavernbdx/" title="Page Instagram The Tavern Market" target="_blank">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://plus.google.com/s/the%20market%20tavern%20bordeaux/top" title="Google+ The Tavern Market" target="_blank">
+                                    <i class="fa fa-google"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/search?q=the%20market%20tavern%20bordeaux&src=typd&lang=fr" title="Twitter The Tavern Market" target="_blank">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        
+            <div id="Footer__footer" class="row text-center">
+                <p class="Information">©&nbsp;Copyright 2018 The Market Tavern&nbsp;- Réalisation&nbsp;:
+                    <a href="https://github.com/MonochromePinguin/les4libellules/" title="Lien Github projet" target="_blank">Les 4 libellules</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Bootstrap : Latest compiled and minified JavaScript -->
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+  		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+  		crossorigin="anonymous">
+  	</script>
+  </body>
+</html>
