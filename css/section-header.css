@@ -13,8 +13,9 @@
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 
-	margin: 0.5em auto;
+	margin: 0.3rem auto;
     padding: 0;
+    padding-top: 0.5rem;
 
     font-size: 2rem;
 
@@ -28,16 +29,15 @@
 
 /* the half-elevated «THE» into the main title */
 #primary-column .mini {
-    position: relative;
-    display: inline-block;
+    position: absolute;
     background-color: white;
 
     font-size: 1.5rem;
 
-    top: -50%;
-    z-index: 1;
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
-
 
 
 /* navbar styling */
@@ -55,6 +55,7 @@
 #primary-column ul {
     display: flex;
     flex-direction: row;
+    width: 100%;
 
     justify-content: space-between;
 }

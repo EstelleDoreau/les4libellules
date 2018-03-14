@@ -85,9 +85,7 @@
               
           <div class="text-center">
             <div class="mainTitle font-title text-center">
-<!--             <div class="mainTitle font-title text-center
-                  visible-sm visible-md visible-lg">
- -->              <p class="mini font-title">THE</p>
+              <p class="mini font-title">THE</p>
               <p>Market Tavern</p>
             </div>
           </div>
@@ -104,12 +102,15 @@
             <li><a href="#events">Événements</a></li>
             <li><a href="#facebook">Notre facebook</a></li>
             <li><a href="#Contact">Contact</a></li>
+            
+            <li>
+              <a class="btn btn-default navbar-right" href="#Contact">
+                Je réserve
+              </a>
+            </li>
         </ul>
       </nav>
 
-      <a class="btn btn-default navbar-right" href="#Contact">
-        Je réserve
-      </a>
 
       <div class="navbar-brand navbar-left visible-xs">
         <p class="title-xs font-title">the Market Tavern</p>
@@ -186,50 +187,53 @@
         <div class="col-sm-6 ">
            	<!-- Make a modal "window" pop-up.
            		2 ways : on small devices, a click on the image trigger the evenment ; on devices that support the :hover, a text appears and offers a button to trigger -->
-           	<div class="thumbnail"
-           		 data-toggle="modal" data-target="#menuModal">
+ 
+            <div class="thumbnail"
+               data-toggle="modal" data-target="#menuModal">
             
-            	<img class="img-responsive" alt="une photo du menu"
-            		 src="img/burger.jpg" title="cliquez sur l'image pour voir le menu des plats cuisinés">
+              <img class="img-responsive"
+                 alt="une photo du menu des plats"
+                 src="img/burger.jpg" title="Cliquez sur l'image pour accéder au menu des nourritures">
 
-            	<p class="popper text-center" title="cliquez ici pour voir le menu des plats cuisinés">
-            		Sed ut perspiciatis unde omnis iste natus error sit
-            		voluptatem accusantium doloremque laudantium, dicta sunt explicabo.
-            		<br>
-            		<!-- the property data-toggle="modal" make the modal close almost instantly, so we don't use it -->
-            		<button class="btn btn-info"
-            				data-target="#menuModal">
-            			Voir le menu
-            		</button>
-            	</p>
+              <p class="popper text-center" title="cliquez ici pour voir le menu des nourritures">
+                Sed ut perspiciatis unde omnis iste natus error sit
+                voluptatem accusantium doloremque laudantium, dicta sunt explicabo.  
+                <br>
+                <button class="btn btn-info"
+                    data-toggle="modal"
+                    data-target="#menuModal">
+                    Voir le menu
+                </button>
+              </p>
             
             </div>
-		
-    				<!-- modal pop-up -->
+    
+            <!-- modal pop-up -->
             <div class="modal fade" id="menuModal"
-    					 tabindex="-1" role="dialog">
-    				  <div class="modal-dialog" role="document">
-    				    <div class="modal-content">
-    				      
-    				      <div class="modal-header">
-    				        <p>
-    				        	<span class="">les spécialités</span>
-    					        <button type="button" class="close"
-    					        		   aria-label="Close">
-    					        	<span aria-hidden="true">&times;</span>
-    					        </button>
-    					    </p>
-    				      </div>
+               tabindex="-1" role="dialog"
+               aria-label="Vers le menu des plats">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  
+                  <div class="modal-header">
+                    <p>
+                      <span>les spécialités</span>
+                      <button type="button" class="close"
+                              data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                   </p>
+                  </div>
 
-    				      <div class="modal-body">
-    				        <img class="img-responsive" alt="the main menu"
-    				        	src="img/main-menu.jpg"
-    				        	title="Régalez-vous !">
-    				      </div>
+                  <div class="modal-body">
+                    <img class="img-responsive" alt="the main menu"
+                      src="img/main-menu.jpg"
+                      title="Régalez-vous !">
+                  </div>
+                </div>
 
-    				  	</div>
-    				  </div>
-    				</div>
+                </div>
+              </div>
 
         </div>  <!-- .col-sm-6 -->
 
@@ -237,7 +241,7 @@
         <div class="col-sm-6 ">
             <!-- same as before ↑ -->
            	<div class="thumbnail"
-           		 data-toggle="modal" data-target="#cocktailsModal">
+               data-toggle="modal" data-target="#cocktailsModal">
             
             	<img class="img-responsive"
             		 alt="une photo du menu des cocktails"
@@ -274,7 +278,7 @@
     				      </div>
 
     				      <div class="modal-body">
-    				        <img class="img-responsive" alt="the main menu"
+    				        <img class="img-responsive" alt="the drink menu"
     				        	src="img/drink-menu.jpg"
     				        	title="Régalez-vous !">
     				      </div>
@@ -284,7 +288,7 @@
     				  </div>
     				</div>
 
-        </div> <!-- .col-smè-6 -->
+        </div> <!-- .col-sm-6 -->
 
     </section>  <!-- #foodnDrink -->
 
