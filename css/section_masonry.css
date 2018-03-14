@@ -40,12 +40,12 @@
 .square-section .big .art img,
 .square-section .small .art img {
     width: 100%;
-    display: block
+    display: block;
 }
 
 .square-section .big .content,
 .square-section .small .content {
-    position: relative
+    position: relative;
 }
 
 .square-section .big .content .inner,
@@ -57,7 +57,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     padding: 0 20px;
-    width: 100%
+    width: 100%;
 }
 
 .square-section .big .content .super-list,
@@ -67,17 +67,17 @@
     color: #f9964f;
     float: none;
     padding: 0;
-    margin: 0
+    margin: 0;
 }
 
 .square-section .big .content .more,
 .square-section .small .content .more {
-    display: block
+    display: block;
 }
 
 .square-section .big .content .more:hover,
 .square-section .small .content .more:hover {
-    color: #f9964f
+    color: #f9964f;
 }
 
 .square-section .big .content .more:after,
@@ -86,19 +86,19 @@
 }
 
 .square-section .big {
-    position: relative
+    position: relative;
 }
 
 .square-section .big.big-left {
-    float: left
+    float: left;
 }
 
 .square-section .big.big-right {
-    float: right
+    float: right;
 }
 
 .square-section .big .art {
-    width: 100%
+    width: 100%;
 }
 
 .square-section .big .content {
@@ -110,12 +110,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0
+    opacity: 0;
 }
 
 .square-section .big .content .more,
 .square-section .big .content h4 {
-    color: #fff
+    color: #fff;
 }
 
 .square-section .big:hover .art img {
@@ -124,28 +124,28 @@
 }
 
 .square-section .big:hover .content {
-    opacity: 1
+    opacity: 1;
 }
 
 .square-section .big .content .more:hover {
-    color: #fff
+    color: #fff;
 }
 
 .square-section .small>a .content {
     -webkit-transition: all .6s ease-in-out;
-    transition: all .6s ease-in-out
+    transition: all .6s ease-in-out;
 }
 
 .square-section .small>a .content .more,
 .square-section .small>a .content .super-list,
 .square-section .small>a .content h4 {
     -webkit-transition: all .6s ease-in-out;
-    transition: all .6s ease-in-out
+    transition: all .6s ease-in-out;
 }
 
 .square-section .small>a:hover .art img {
     -webkit-transform: scale(1.05);
-    transform: scale(1.05)
+    transform: scale(1.05);
 }
 
 .square-section .small>a:hover .art:after {
@@ -154,75 +154,75 @@
 }
 
 .square-section .small>a:hover .content .more {
-    color: #f9964f
+    color: #f9964f;
 }
 
 .square-section .small>a:hover .content {
-    background: #f9964f
+    background: #f9964f;
 }
 
 .square-section .small>a:hover .content .more,
 .square-section .small>a:hover .content .super-list,
 .square-section .small>a:hover .content h4 {
-    color: #fff
+    color: #fff;
 }
 
 .square-section .small.small-left {
-    float: left
+    float: left;
 }
 
 .square-section .small.small-right {
-    float: right
+    float: right;
 }
 
 .square-section .small.img-left .art {
-    float: left
+    float: left;
 }
 
 .square-section .small.img-left .art:after {
     border-right: 22px solid #fff;
-    right: 0
+    right: 0;
 }
 
 .square-section .small.img-left .art img {
     -webkit-transform-origin: left center;
-    transform-origin: left center
+    transform-origin: left center;
 }
 
 .square-section .small.img-left .content {
-    float: right
+    float: right;
 }
 
 .square-section .small.img-left>a:hover .art:after {
     border-right-width: 26px;
-    border-right-color: #f9964f
+    border-right-color: #f9964f;
 }
 
 .square-section .small.img-right .art {
-    float: right
+    float: right;
 }
 
 .square-section .small.img-right .art:after {
     border-left: 22px solid #fff;
-    left: 0
+    left: 0;
 }
 
 .square-section .small.img-right .art img {
     -webkit-transform-origin: right center;
-    transform-origin: right center
+    transform-origin: right center;
 }
 
 .square-section .small.img-right .content {
-    float: left
+    float: left;
 }
 
 .square-section .small.img-right>a:hover .art:after {
     border-left-width: 26px;
-    border-left-color: #f9964f
+    border-left-color: #f9964f;
 }
 
 .square-section .small .art {
-    width: 50%
+    width: 50%;
 }
 
 .square-section .small .art:after {
@@ -336,5 +336,7 @@ position: relative;
 	
 }
 h4{
-	font-size: 2em;
+	font-size: 1.8vw;
 }
+
+

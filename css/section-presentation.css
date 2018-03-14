@@ -1,8 +1,11 @@
 #presentation .row:nth-child(2) {
-    
-    margin-top: 120px;
-    margin-bottom: 120px;
-    
+    margin-bottom: 6rem;
 }
 
 
+<<<<<<< HEAD
+=======
+#presentation span {
+    color:#730C25;
+}
+>>>>>>> f1858b11c623da80cd1e1adfa2f1a6a4ea3b05ea

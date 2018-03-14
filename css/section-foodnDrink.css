@@ -11,19 +11,29 @@
 	position: relative;
 }
 
+#foodnDrink .opacifier {
+	position: absolute;
+	top:0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+
+	background-color: rgba( 0,0,0, 0.7 );
+}
+
 
 #foodnDrink .popper {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+	z-index: 2;
 
 	padding: 4% 8%;
 	margin: 0;
 	
 	font-family: 'PT Sans Caption', sans-serif;
 	color: white;
-
-	text-shadow: 1px 1px black, 1px -1px black, -1px -1px black, -1px 1px black;
 }
 
 /* the "hover" media query is not recognised under today's firefox ...
@@ -36,13 +46,23 @@ Sorry, I'm using an ugly approximation. I DID IT UNDER THE THREAT OF
 		transform: translateX(-100%);
 		transition: transform 0.3s;
 	}
-
 	#foodnDrink .thumbnail:hover .popper {
-		transform: none
+		transform: none;
 	}
+
+	#foodnDrink .opacifier {
+		transition: background-color 0.3s;
+		background-color: transparent;
+	}
+	#foodnDrink .thumbnail:hover .opacifier {
+		background-color: rgba( 0,0,0, 0.7 );
+	}
+
 }
 
 
 #foodnDrink .popper .btn {
 	margin-top: 4%;
 }
+
+
