@@ -75,7 +75,6 @@ header .btn.btn-default {
 header .navbar-default {
 	background-color: white;
 	
-	position: fixed;
 	width: 100%;
 
 	border: none;
@@ -104,8 +103,10 @@ header .navbar-default .navbar-nav > li > a:hover { text-decoration: underline }
 
 /* banner styling */
 
-#banner { margin: 0 }
-
+#banner.container-fluid {
+    margin: 0;
+    padding-top: 0;
+}
 
 #banner .parentSurimpressed {
 	position: relative;
