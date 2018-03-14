@@ -42,9 +42,7 @@
 
 #primary-column .headPig {
     max-width: 50px;
-    margin-right: 50px
-
-}
+ }
 
 
 /* navbar styling */
@@ -62,9 +60,6 @@
 #primary-column ul {
     display: flex;
     flex-direction: column;
-    width: 100%;
-
-
 }
 
 @media (min-width: 768px) {

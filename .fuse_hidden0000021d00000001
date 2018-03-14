@@ -110,7 +110,7 @@
         <ul class="container inline center">
             <li><a href="#presentation">À propos</a></li>
             <li><a href="#foodnDrink">Nos menus</a></li>
-            <li><a href="#LiveSports">Sports en live </a></li>
+            <li><a href="#LiveSports">Sport en live </a></li>
             <li><a href="#events">Événements</a></li>
             <li><a href="#Facebook">Notre facebook</a></li>
             <li><a href="#Contact">Contact</a></li>
@@ -172,11 +172,10 @@
                      </div>
                  </div>
                  <div class="row">
-                     <div class="col-xs-12 col-md-12 text-center">
-                        <p><span>Notre établissement appartient à l'association "the Pub Group"</span></p>
-                        <button class="button button__dark-blue">
-                          <a href="http://rathergoodpubcompany.com" target="_blank">The Bordeaux Pub</a>
-                        </button>                     
+                     <div class="col-xs-12 col-md-12">
+                        <p class="text-center"><span>Notre établissement appartient à l'association "the Pub Group"</span></p>
+                        <p class="text-center"><a class="btn btn-primary" href="http://rathergoodpubcompany.com" target="_blank" role="button">The Bordeaux Pub</a></p>   
+                     
                      </div>
                  </div>     
           </div>
@@ -190,7 +189,7 @@
   	<section id="foodnDrink" >
 		<div class="container">
     	<div class="row">
-  			<h2 class="text-center">Nos menus</h2>
+  			<h2 class="text-center">Manger &amp; Boire</h2>
   		</div>
 
   		<div class="row">
@@ -211,8 +210,8 @@
               <p class="popper text-center" title="cliquez ici pour voir le menu des nourritures">
                 Sed ut perspiciatis unde omnis iste natus error sit
                 voluptatem accusantium doloremque laudantium, dicta sunt explicabo.  
-                <br><br><br>
-                <button class="button button__light-green"
+                <br>
+                <button class="btn btn-info"
                     data-target="#menuModal">
                     Voir le menu
                 </button>
@@ -229,7 +228,7 @@
                   
                   <div class="modal-header">
                     <p>
-                      <span>Nos spécialités</span>
+                      <span>les spécialités</span>
                       <button type="button" class="close"
                               data-toggle="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -265,8 +264,8 @@
             		Nemo enim ipsam voluptatem quia voluptas sit aspernatur
             		aut odit aut fugit, sed quia consequuntur. Neque porro
             		quisquam est, qui dolorem ipsum quia, consectetu !
-            		<br><br><br>
-               	<button class="button button__light-green"
+            		<br>
+               	<button class="btn btn-info"
             				data-target="#cocktailsModal">
             			  Voir le menu
             		</button>
@@ -282,7 +281,7 @@
     				      
     				      <div class="modal-header">
     				      	<p>
-    				      		<span>Nos boissons</span>
+    				      		<span>les cocktails</span>
     					        <button type="button" class="close"
                               data-toggle="modal" aria-label="Close">
     					        	<span aria-hidden="true">&times;</span>
@@ -308,9 +307,9 @@
 
 
     <!-- live sport -->
-  	<section id="LiveSports" class="background__dark-green" > 		
+  	<section id="LiveSports" class="background__light-green" > 		
   	   <div class="container">
-          <h2 class="text-center">Sports en live</h2>
+          <h2 class="text-center">Live Sports</h2>
           <div class="row square-section">
           		<div class="col-sm-12 article-list" id="sides-list">
           				<article class="the-side big big-left scroll-pop fade-in popped">
@@ -461,7 +460,7 @@
          <div class="container">
              <div class="row">
                  <div class="col-xs-12 text-center">
-                     <h2>Événements</h2>
+                     <h2>Events</h2>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                  </div>
              </div>     
@@ -469,10 +468,10 @@
           
 
             <div class="row">
-              <div class="col-xs-12 col-md-4">
-                 <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthemarkettavernbordeaux%2F&tabs=events%2C%20timeline%2C%20messages&width=290&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+              <div class="col-md-4">
+                 <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthemarkettavernbordeaux%2F&tabs=events%2C%20timeline%2C%20messages&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
               </div>
-              <div class="col-xs-12 col-md-8">
+              <div class="col-md-8">
                 <div class="row">
                   <div class="col-xs-6">
                     <div class="thumbnail">
@@ -586,7 +585,7 @@
                     </div>
                   
                     <div class="text-center">
-                        <button type="submit" id="contact_form_submit" name="contact_form[submit]" class="button button__light-pink">Envoyer</button>
+                        <button type="submit" id="contact_form_submit" name="contact_form[submit]" class="button">Envoyer</button>
                     </div>
                 </form>
               </div>
