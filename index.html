@@ -43,6 +43,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!--header-->
     <link rel="stylesheet" type="text/css" href="css/section-header.css">
+    <link rel="stylesheet" href="css/section-header-imported.css">
     <!--food'nDrink-->
     <link rel="stylesheet" type="text/css" href="css/section-foodnDrink.css">
   	<!-- masonry -->
@@ -70,65 +71,54 @@
 
 	<!-- nav et bannière -->
 
-  	<header>
+    <div id="primary-column">
 
-  	  <!-- top fixed bar -->
-  <!-- TODO : make it disapear when scrolling down, visible when scrolling up ?-->
-  	  <div class="headBar">
+      <header id="Header" class="border-bottom">
 
-  	  	<div class="mainTitle font-title text-center
-  	  			visible-sm visible-md visible-lg">
-  	  		<p class="mini font-title">THE</p>
-  	  		<p>Market Tavern</p>
-  	  	</div>
+        <div class="container">
 
-  	  </div>
+          <a class="toggle-mobile-nav hamburger hamburger--squeeze js-hamburger" href="#">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </a>
+              
+          <div class="text-center">
+            <div class="mainTitle font-title text-center">
+              <p class="mini font-title">THE</p>
+              <p>Market Tavern</p>
+            </div>
+          </div>
 
-  	  <!-- Navbar -->
-  	  <nav class="navbar navbar-default navbar-center">
+        </div>
 
-  	    <!-- Brand and toggle get grouped for better mobile display -->
-  	    <div class="navbar-header">
+      </header>
 
-  	      <button type="button" class="navbar-toggle collapsed"
-                  data-toggle="collapse" data-target="#theMenu" aria-expanded="false">
-  	        <span class="sr-only">Changer de mode de navigation</span>
-  	        <span class="icon-bar"></span>
-  	        <span class="icon-bar"></span>
-  	        <span class="icon-bar"></span>
-  	      </button>
-
- <!--  	      <img class="navbar-brand navbar-left img-responsive"
-        		alt="Our marvelous pig-branded logo"
-        		title="Our logo is a fat,tasty flying pig (on the ground for now)"
-        		src="img/logos/logo_black_transparent_background.png">
- -->
-        	  <div class="navbar-brand navbar-left visible-xs">
-        	  	<p class="title-xs font-title">the Market Tavern</p>
-        	  </div>
-
-  	    </div>
-
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="theMenu">
-       
-          <ul class="nav navbar-nav">
+      <nav class="primary">
+        <ul class="container inline center">
             <li><a href="#aboutUs">À propos du pub</a></li>
             <li><a href="#foodnDrink">Boire &amp; manger</a></li>
             <li><a href="#LiveSports">Sport en live </a></li>
             <li><a href="#events">Événements</a></li>
             <li><a href="#facebook">Notre facebook</a></li>
             <li><a href="#Contact">Contact</a></li>
-          </ul>
-        
-          <a class="btn btn-default navbar-right" href="#Contact__informations">Je réserve</a>
-        </div>
+            
+            <li>
+              <a class="btn btn-default navbar-right" href="#Contact">
+                Je réserve
+              </a>
+            </li>
+        </ul>
+      </nav>
 
-  	  </nav>
 
-    </header>
+      <div class="navbar-brand navbar-left visible-xs">
+        <p class="title-xs font-title">the Market Tavern</p>
+      </div>
 
+    </div>
+
+    <!-- banner -->
 
     <section id="banner" class="container-fluid">
       <div class="row parentSurimpressed">
@@ -142,6 +132,7 @@
           aria-hidden="true" >
 
       </div>
+    </section>
 
 
 
@@ -158,7 +149,7 @@
                  
                  <div class="row">
                      <div class="col-xs-12 col-md-6">
-                         <img src="img/gastro_pub.png" class="image-responsive" alt="Responsive image">
+                         <img src="img/gastro_pub.png" class="img-responsive" alt="Responsive image">
                          
                      
                      </div>
@@ -196,61 +187,61 @@
         <div class="col-sm-6 ">
            	<!-- Make a modal "window" pop-up.
            		2 ways : on small devices, a click on the image trigger the evenment ; on devices that support the :hover, a text appears and offers a button to trigger -->
-           	<div class="thumbnail"
-           		 data-toggle="modal" data-target="#menuModal">
+ 
+            <div class="thumbnail"
+               data-toggle="modal" data-target="#menuModal">
             
-            	<img class="img-responsive" alt="une photo du menu"
-            		 src="img/burger.jpg" title="cliquez sur l'image pour voir le menu des plats cuisinés">
+              <img class="img-responsive"
+                 alt="une photo du menu des plats"
+                 src="img/burger.jpg" title="Cliquez sur l'image pour accéder au menu des nourritures">
 
-            	<p class="popper text-center" title="cliquez ici pour voir le menu des plats cuisinés">
-            		Sed ut perspiciatis unde omnis iste natus error sit
-            		voluptatem accusantium doloremque laudantium, totam rem
-            		aperiam, eaque ipsa quae ab illo inventore veritatis et
-            		quasi architecto beatae vitae dicta sunt explicabo.
-            		<br>
-            		<!-- the property data-toggle="modal" make the modal close almost instantly, so we don't use it -->
-            		<button class="btn btn-info"
-            				data-target="#menuModal">
-            			Voir le menu
-            		</button>
-            	</p>
+              <p class="popper text-center" title="cliquez ici pour voir le menu des nourritures">
+                Sed ut perspiciatis unde omnis iste natus error sit
+                voluptatem accusantium doloremque laudantium, dicta sunt explicabo.  
+                <br>
+                <button class="btn btn-info"
+                    data-toggle="modal"
+                    data-target="#menuModal">
+                    Voir le menu
+                </button>
+              </p>
             
             </div>
-		
-    				<!-- modal pop-up -->
+    
+            <!-- modal pop-up -->
             <div class="modal fade" id="menuModal"
-    					 tabindex="-1" role="dialog"
-    					 aria-labelledby="copie du menu des repas">
-    				  <div class="modal-dialog" role="document">
-    				    <div class="modal-content">
-    				      
-    				      <div class="modal-header">
-    				        <p>
-    				        	<span class="">les spécialités</span>
-    					        <button type="button" class="close"
-    					        		data-dismiss="modal" aria-label="Close">
-    					        	<span aria-hidden="true">&times;</span>
-    					        </button>
-    					    </p>
-    				      </div>
+               tabindex="-1" role="dialog"
+               aria-label="Vers le menu des plats">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  
+                  <div class="modal-header">
+                    <p>
+                      <span>les spécialités</span>
+                      <button type="button" class="close"
+                              data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                   </p>
+                  </div>
 
-    				      <div class="modal-body">
-    				        <img class="img-responsive" alt="the main menu"
-    				        	src="img/main-menu.jpg"
-    				        	title="Régalez-vous !">
-    				      </div>
+                  <div class="modal-body">
+                    <img class="img-responsive" alt="the main menu"
+                      src="img/main-menu.jpg"
+                      title="Régalez-vous !">
+                  </div>
+                </div>
 
-    				  	</div>
-    				  </div>
-    				</div>
+                </div>
+              </div>
 
-        </div> <!-- .col-sm-6 -->
+        </div>  <!-- .col-sm-6 -->
 
 
         <div class="col-sm-6 ">
             <!-- same as before ↑ -->
            	<div class="thumbnail"
-           		 data-toggle="modal" data-target="#cocktailsModal">
+               data-toggle="modal" data-target="#cocktailsModal">
             
             	<img class="img-responsive"
             		 alt="une photo du menu des cocktails"
@@ -258,8 +249,7 @@
 
             	<p class="popper text-center" title="cliquez ici pour voir le menu des boissons">
             		Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-            		aut odit aut fugit, sed quia consequuntur magni dolores
-            		eos qui ratione voluptatem sequi nesciunt. Neque porro
+            		aut odit aut fugit, sed quia consequuntur. Neque porro
             		quisquam est, qui dolorem ipsum quia, consectetu !
             		<br>
                	<button class="btn btn-info"
@@ -273,32 +263,34 @@
 		
     				<!-- modal pop-up -->
             <div class="modal fade" id="cocktailsModal"
-    					 tabindex="-1" role="dialog" aria-labelledby="copie du menu des boissons">
+    					 tabindex="-1" role="dialog" aria-label="Vers le menu des boissons">
     				  <div class="modal-dialog" role="document">
     				    <div class="modal-content">
     				      
     				      <div class="modal-header">
     				      	<p>
     				      		<span>les cocktails</span>
-    					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    					        <button type="button" class="close"
+                              data-dismiss="modal" aria-label="Close">
     					        	<span aria-hidden="true">&times;</span>
     					        </button>
     					     </p>
     				      </div>
 
     				      <div class="modal-body">
-    				        <img class="img-responsive" alt="the main menu"
+    				        <img class="img-responsive" alt="the drink menu"
     				        	src="img/drink-menu.jpg"
     				        	title="Régalez-vous !">
     				      </div>
+                </div>
 
     				    </div>
     				  </div>
     				</div>
 
-        </div>
+        </div> <!-- .col-sm-6 -->
 
-    </section> <!-- #foodnDrink -->
+    </section>  <!-- #foodnDrink -->
 
 
 
@@ -309,21 +301,35 @@
           <div class="row square-section">
           		<div class="col-sm-12 article-list" id="sides-list">
           				<article class="the-side big big-left scroll-pop fade-in popped">
-          					<a href="img/programmesport.jpg" id="afficheimage" target="_BLANK">
+          					<a href="#afficheimage" id="afficheimage"  data-toggle="modal" data-target="#myModal">
           						<div class="art">
-          							<img src="img/imgresize/foot1.jpg"  alt="photostadedefoot"/>
+          							<img src="img/worldcup2018.png"  alt="photostadedefoot"/>
           						</div>
           						<div class="article-content content">
           							<div class="inner">
           								<ul class="super-list"><li>Mars, 2018</li></ul>
-          								<h4>Barclays premier league, Ligue 1.....</h4>
-          								<span class="more pink">Voir le programme</span>
+          								<h4>Coupe du monde 2018 </h4>
+          								<span class="more pink">Voir les différents Groupe</span>
           							</div>
           						</div>
           					</a>
+							
+							<!--  ajout modal boostrap 3-->
+							
+							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    
+      
+      <div class="modal-body">
+        <img src="img/worldcup2018.jpg" alt="photo">
+      </div>
+      
+    
+  </div>
+</div>
           				</article>
           				<article class="the-side small small-right img-right scroll-pop fade-in popped">
-          					<a href="#">
+          					<a href="#rugby" data-toggle="modal" data-target="#modalrugby" id="rugby">
           						<div class="art">
           							<img src="img/imgresize/allblacks.jpg" alt="photorugby">
           						</div>
@@ -335,62 +341,100 @@
           							</div>
           						</div>
           					</a>
+							
+							<!-- modal pour rugby -->
+<div class="modal fade" id="modalrugby" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    
+      
+      <div class="modal-body">
+        <img src="img/programmerugby.jpg" alt="photo">
+      </div>
+      
+    
+  </div>
+</div>
           				</article>
           				<article class="the-side small small-right img-left scroll-pop fade-in popped">
-          					<a href="#presentation">
+          					<a href="#logo" id="logo">
           						<div class="art">
           							<img src="img/imgresize/logoretouche.png" alt="logo" >
           						</div>
           						<div class="article-content content">
           							<div class="inner">
           								<ul class="super-list"><li>Mars 2018</li></ul>
-          								<h4>The gastro Pub</h4>
+          								<h4>Le meilleur Pub pour la coupe du mon 2018</h4>
           								
           							</div>
           						</div>
           					</a>
           				</article>
           				<article class="the-side big big-right scroll-pop fade-in popped">
-          					<a href="#">
+          					<a href="#happyhour" id="happyhour">
           						<div class="art">
           							<img src="img/imgresize/soccer3.jpg" alt="photopub">
           						</div>
           						<div class="article-content content">
           							<div class="inner">
           								<ul class="super-list"><li></li></ul>
-          								<h4>Happy Hour</h4>
+          								<h4>Venez à plusieurs</h4>
           								
           							</div>
           						</div>
           					</a>
           				</article>
           				<article class="the-side small small-left img-left scroll-pop fade-in popped">
-          					<a href="img/drink-menu.jpg" target="_blank">
+          					<a href="#champion" id="champion" data-toggle="modal" data-target="#bestmatch">
           						<div class="art">
-          							<img src="img/imgresize/soccerbar.jpg" alt="pub">
+          							<img src="img/paname.jpg" alt="foot">
           						</div>
           						<div class="article-content content">
           							<div class="inner">
           								<ul class="super-list"><li></li></ul>
-          								<h4>Bar</h4>
+          								<h4>les meilleurs match du week-end</h4>
           								
           							</div>
           						</div>
           					</a>
+							
+							<div class="modal fade" id="bestmatch" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    
+      
+      <div class="modal-body">
+        <img src="img/programmesport.jpg" alt="photo">
+      </div>
+      
+    
+  </div>
+</div>
           				</article>
           				<article class="the-side small small-left img-right scroll-pop fade-in popped">
-          					<a href="img/Menu.jpg" target="_blank">
+          					<a href="#liga" id="liga" data-toggle="modal" data-target="#ligasantander">
           						<div class="art">
-          							<img src="img/imgresize/burger.jpg" alt="burger" >
+          							<img src="img/realbar%C3%A7av2.png" alt="real barça" >
           						</div>
           						<div class="article-content content">
           							<div class="inner">
           								<ul class="super-list"><li></li></ul>
-          								<h4>Happy Burger</h4>
+          								<h4>Liga Santander</h4>
           								
           							</div>
           						</div>
           					</a>
+							
+	<div class="modal fade" id="ligasantander" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    
+      
+      <div class="modal-body">
+        <img src="img/programmesport.jpg" alt="photo">
+      </div>
+      
+    
+  </div>
+</div>
+       
           				</article>
           			</div>
           	</div>
@@ -620,6 +664,8 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="JS/header.js"></script>
 
     <!-- Bootstrap : Latest compiled and minified JavaScript -->
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"

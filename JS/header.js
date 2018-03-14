@@ -14,8 +14,8 @@ $(document).ready(
     	function()
     	{
         	$(window).scrollTop() >= 97 ?
-        		$("header").addClass("sticky-nav")
-        		: $("header").removeClass("sticky-nav");
+        		$("#Header").addClass("sticky-nav")
+        		: $("#Header").removeClass("sticky-nav");
         }
     );
   }
