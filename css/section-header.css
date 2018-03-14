@@ -69,10 +69,9 @@ justify-content: space-between;
 }
 
 nav.primary ul > li > a {
-	font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
     color: black;
-	font-size: 0.7rem;
+    font-size: 0.7rem;
 
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -80,10 +79,13 @@ nav.primary ul > li > a {
 
 
 
-
 /* banner styling */
 
-#banner.container-fluid { margin: 0 }
+#banner {
+    position: relative;
+    margin: 0;
+    padding-bottom: 0 !important;
+}
 
 #banner .parentSurimpressed {
 	position: relative;
@@ -93,7 +95,7 @@ nav.primary ul > li > a {
 
 #banner .surimpressedOnParent {
 	position: absolute;
-	top: 50%;
+	top: calc( 50% + 26px );
 	left: 50%;
 	transform: translate( -50%, -50% );
 
