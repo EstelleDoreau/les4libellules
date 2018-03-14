@@ -71,7 +71,7 @@ justify-content: space-between;
 nav.primary ul > li > a {
     font-family: 'Montserrat', sans-serif;
     color: black;
-    font-size: 0.7rem;
+    font-size: 1rem;
 
     text-transform: uppercase;
     letter-spacing: 1px;
