@@ -200,19 +200,19 @@ nav.primary ul li:last-child a {
     margin-right: 0!important
 }
 
-nav.primary ul li a {
-    font-family: Amiko, sans-serif;
+/*nav.primary ul li a {
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    color: black;
+
     font-size: 10px;
     line-height: 14px;
-    color: #f9964f;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin: 0 50px;
-    color: #232020;
-    position: relative
+    position: relative;
 }
-
+*/
 @media (max-width:767px) {
     nav.primary ul li a {
         font-size: 10px
