@@ -5,9 +5,12 @@
 font-family: 'Montserrat', sans-serif;
 font-family: 'PT Sans Caption', sans-serif;*/
 
+html { font-size: 62.5%; } /* 1rem vaut 10px */
+
+
 body {
 	font-family: 'PT Sans Caption', sans-serif;
-    font-size: 1.6em; 
+    font-size: 1.6em;
 }
 
 h2 {
