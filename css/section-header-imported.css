@@ -391,7 +391,7 @@ html.touch nav.primary ul li a:after {
 }
 
 #Header.sticky-nav ~ nav.primary h1 {
-    left: 30px
+    left: 10px
 }
 
 
