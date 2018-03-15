@@ -118,3 +118,15 @@ a.button:hover, a.button:focus, a.button:active{
     text-align: center;
     margin: 2rem 0;
 }
+
+
+.button--reservation {
+    padding: 0;
+}
+
+.button--reservation a {
+    padding: 0.5rem 1rem;
+    color: white !important;
+    display: block;
+    font-weight: 600;
+}
