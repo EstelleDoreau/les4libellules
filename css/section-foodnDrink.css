@@ -85,7 +85,7 @@ Sorry, I'm using an ugly approximation. I DID IT UNDER THE THREAT OF
 }
 	
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 991px) {
 	#foodnDrink .popper {
 		font-size: 1.2rem;
 	}
