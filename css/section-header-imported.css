@@ -217,20 +217,6 @@ nav.primary ul li:last-child a {
     nav.primary ul li a { font-size: 10px }
 }
 
-nav.primary ul li a:after {
-    -webkit-transition: width .4s ease-in-out;
-    transition: width .4s ease-in-out;
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    left: -10px;
-    top: 14px
-}
-
-nav.primary ul li a:hover:after {
-    width: 75%
-}
 
 nav.primary ul li a.the-spots:after {
     background: #f9964f
@@ -287,9 +273,6 @@ nav.primary h1 img {
     width: 154px
 }
 
-html.touch nav.primary ul li a:after {
-    display: none!important
-}
 
 #primary-column>main {
     margin-top: 49px;

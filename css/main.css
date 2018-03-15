@@ -1,12 +1,6 @@
 
 /* CSS commun à toutes les sections */
-
-/*font-family: 'Yeseva One', cursive;
-font-family: 'Montserrat', sans-serif;
-font-family: 'PT Sans Caption', sans-serif;*/
-
 html { font-size: 62.5%; } /* 1rem vaut 10px */
-
 
 body {
 	font-family: 'PT Sans Caption', sans-serif;
@@ -27,8 +21,6 @@ a:focus, a:hover {
     color: white;
 }
 
-/* TODO : classes créées pour pouvoir tester / supprimer ensuite ce dont on ne
- se servira pas */
 .background__dark-green {
 	background-color: #22301e;
 	color: white;
@@ -90,7 +82,7 @@ a:focus, a:hover {
     left: -100%;
     background-color: transparent
 }
-.button:hover:after {
+.button:hover::after {
     z-index: 2;
     left: 0;
     background-color: rgba(255, 255, 255, 0.15)
@@ -117,11 +109,6 @@ a.button:hover, a.button:focus, a.button:active{
     justify-content: center;
     text-align: center;
     margin: 2rem 0;
-}
-
-
-.button--reservation {
-    padding: 0;
 }
 
 .button--reservation a {
