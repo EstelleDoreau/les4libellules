@@ -152,6 +152,7 @@
 .square-section .small>a .content {
     -webkit-transition: all .6s ease-in-out;
     transition: all .6s ease-in-out;
+    background-color: white;
 }
 
 .square-section .small>a .content .more,
@@ -177,7 +178,7 @@
 }
 
 .square-section .small>a:hover .content {
-    background: #f9964f;
+    background: #334524;
 }
 
 .square-section .small>a:hover .content .more,
@@ -215,7 +216,7 @@
 /* couleur flèche vers la gauche */
 .square-section .small.img-left>a:hover .art:after {
     border-right-width: 26px;
-    border-right-color: green;
+    border-right-color: #334524;
 }
 
 .square-section .small.img-right .art {
@@ -241,7 +242,7 @@
 
 .square-section .small.img-right>a:hover .art:after {
     border-left-width: 26px;
-    border-left-color: green;
+    border-left-color: #334524;
 }
 
 .square-section .small .art {

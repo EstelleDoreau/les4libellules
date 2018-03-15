@@ -91,13 +91,14 @@ nav.primary ul > li > a {
 
 #banner {
     position: relative;
- 
-    margin: 0;
     margin-top: 54px;
-    padding: 0;
 }
 
-
+@media (min-width: 768px) {
+    #banner {
+        margin-top: 0;
+    }
+}
 @media (min-width: 768px) {
 
     /* used to contain the moving img */
