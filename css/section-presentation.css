@@ -1,17 +1,16 @@
 /* CSS for the "Présentation" section */
 
-#presentation .row:nth-child(2) {
+#Presentation .row:nth-child(2) {
     margin-bottom: 6rem;
 }
 
-#presentation #asso {
-    font-family: 'Yeseva One', cursive;
+#Presentation #asso {
+    font-family: 'Montserrat', sans-serif;
 }
 
 
 @media (max-width:992px) {
-    #presentation img {
+    #Presentation img {
         margin-bottom: 50px;
     }   
 }
-
