@@ -73,6 +73,6 @@ form .form--item textarea {
 
 /* map */
 section#Contact #Contact__map {
-	filter: grayscale(100%);
+	filter: grayscale(50%);
     display: flex;
 }
